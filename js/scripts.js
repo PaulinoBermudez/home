@@ -28,10 +28,10 @@
 		// TYPEWRITER
 		$("#typewriter").typewriter({
 			prefix : "",
-			text : ["Please wait", "Loading ...", "Nice!"],
-			typeDelay : 10,
-			waitingTime : 10,
-			blinkSpeed : 80
+			text : ["Iniciando...", "Buscando al manitas!", "Despierta programador!", "Tomando otro café..."],
+			typeDelay : 20,
+			waitingTime : 40,
+			blinkSpeed : 90
 		});
 		
 		// NAV LINK HOVER AUDIO
@@ -115,7 +115,7 @@
 	
 	
 	// PRELOADER
-	var width = 100,
+	var width = 150,
 		perfData = window.performance.timing, // The PerformanceTiming interface represents timing-related performance information for the given page.
 		EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
 		time = parseInt((EstimatedTime/1000)%60, 10)*100;
