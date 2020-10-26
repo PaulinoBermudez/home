@@ -36,6 +36,10 @@ git add mantenimiento.html
 git nota "Pagina de mantenimiento"
 # New line
 
+git add index-mantenimiento.html
+git nota "Pagina de mantenimiento"
+# New line
+
 git add sitemap.xml
 git nota "sitemap del sitio registrado en GoogleAds."
 git add robots.txt
