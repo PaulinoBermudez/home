@@ -437,8 +437,8 @@ body.section-show .transition-mask:before{
 
 
 .front-section{
-	padding-top:60px;
-	padding-bottom:200px;
+	padding-top:10px;
+	padding-bottom:50px;
 	position:relative;
 }
 .front-heading{
@@ -481,13 +481,13 @@ body.section-show .transition-mask:before{
 	border-radius:0;
 }
 .front-person-img > img{
-	max-width:100%;
+	max-width:140%;
 	vertical-align:bottom;
-	-webkit-transform:rotate(-45deg) translateY(40px);
-	-moz-transform:rotate(-45deg) translateY(40px);
-	-ms-transform:rotate(-45deg) translateY(40px);
-	-o-transform:rotate(-45deg) translateY(40px);
-	transform:rotate(-45deg) translateY(40px);
+	-webkit-transform:rotate(313deg) translateY(-310px) translateX(90px);
+	-moz-transform:rotate(313deg) translateY(-310px) translateX(90px);
+	-ms-transform:rotate(313deg) translateY(-310px) translateX(90px);
+	-o-transform:rotate(313deg) translateY(-310px) translateX(90px);
+	transform:rotate(313deg) translateY(-310px) translateX(90px);
 }
 
 .front-person-titles{
