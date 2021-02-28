@@ -58,7 +58,7 @@ strong {
   margin: 5px 0 -5px 0;
   position: fixed;
   bottom: 0px;
-  width: 100%;
+  width: 98%;
 }
 
 #cajacookies button {
@@ -1559,7 +1559,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .works ul {
-  width: 100%;
+  width: 98%;
   float: left;
   margin: 0;
   padding: 0;
