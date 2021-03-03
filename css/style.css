@@ -126,6 +126,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a:link, a:visited, a:normal{
+  color: (internal value);
+  text-decoration: underline;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active, a:normal{
+  color: (internal value);
+}
 
 /* GLITCH ANIMZ */
 @keyframes noise-anim {
@@ -624,6 +633,7 @@ a:hover {
   left: 0;
   transition-delay: 0.4s;
 }
+
 
 /* SANDWICH BUTTON */
 .sandwich-btn {
