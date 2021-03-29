@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git pull
 git add additionalContents/*
 git nota "Contenidos"
 # New line

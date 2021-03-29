@@ -115,7 +115,7 @@
 	
 	
 	// PRELOADER
-	var width = 150,
+	var width = 120,
 		perfData = window.performance.timing, // The PerformanceTiming interface represents timing-related performance information for the given page.
 		EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
 		time = parseInt((EstimatedTime/1000)%60, 10)*100;
@@ -157,7 +157,7 @@
 	var wow = new WOW(
 	{
 		animateClass: 'animated',
-		offset:       50
+		offset:       40
 	}
 	);
 	wow.init();
@@ -290,8 +290,8 @@
 		var centerX = item.offsetLeft + (item.clientWidth/2);
 		var centerY = item.offsetTop + (item.clientHeight/2);
 
-		var deltaX = Math.floor((centerX - mX)) * -0.45;
-		var deltaY = Math.floor((centerY - mY)) * -0.45;
+		var deltaX = Math.floor((centerX - mX)) * -0.045;
+		var deltaY = Math.floor((centerY - mY)) * -0.045;
 
 		var distance = calculateDistance(item, mX, mY);
 
