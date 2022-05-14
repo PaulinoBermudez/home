@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git pull
 git add additionalContents/*
 git nota "Contenidos"
 # New line
@@ -33,6 +33,10 @@ git nota "Error pages"
 # New line
 
 git add mantenimiento.html
+git nota "Pagina de mantenimiento"
+# New line
+
+git add index-mantenimiento.html
 git nota "Pagina de mantenimiento"
 # New line
 

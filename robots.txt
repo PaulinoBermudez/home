@@ -7,4 +7,4 @@ Disallow: /
 User-agent: *
 Disallow:
 Crawl-delay: 10
-Sitemap: https://hc3.sytes.net/sitemap.xml
+Sitemap: https://humancomputing3.wordpress.com/sitemap.xml
