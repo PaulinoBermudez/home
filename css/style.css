@@ -65,7 +65,7 @@ strong {
   color: rgb(27, 7, 246);
 }
 .caja {
-  font-size: 15%;
+  font-size: 5px+1vh;
   font-family: 'Courier New', Courier, monospace;
   text-rendering: optimizeLegibility;
 }
@@ -973,14 +973,14 @@ a:link:active, a:visited:active, a:normal{
 
 /* NAVBAR */
 .navbar {
-  width: 97%;
-  height: 4vh;
+  width: 89%;
+  height: 5vh;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 60px;
+  padding: 1% 15%;
   position: fixed;
   left: 0;
-  bottom: 15%;
+  bottom: 5%;
   z-index: 11;
   transform: translateY(-100%);
   -webkit-transition: all 400ms cubic-bezier(0.595, 0.03, 0, 0.88);
