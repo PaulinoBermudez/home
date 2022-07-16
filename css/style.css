@@ -2119,7 +2119,7 @@ a:link:active, a:visited:active, a:normal{
   display: flex;
   flex-wrap: wrap;
   padding: 150px 0;
-  background: #fff;
+  background: #d6edf2ee;
 }
 .news .post {
   width: 100%;
