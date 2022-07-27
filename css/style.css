@@ -2829,12 +2829,12 @@ a:link:active, a:visited:active, a:normal{
     border-radius: 5px; /* Borde del boton */
     letter-spacing: 6px; /* Espacio entre letras */
     background-color: #2f2e33b8; /* Color de fondo */
-    padding: 25px 50px; /* Relleno del boton */
+    padding: 28px 28px; /* Relleno del boton */
     position: fixed;
     bottom: 455%;
-    right: 90%;
+    right: 92%;
     transition: all 300ms ease 0ms;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 99;
   }
 .btn-flotante:hover {
