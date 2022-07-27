@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Subida con script"
 git pull
 git add additionalContents/*
 git nota "Contenidos"
