@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TorneoTenis
+comment0.text=\r\n\ Necesitamos\ organizar\ un\ torneo\ de\ tenis\ con\ N\ jugadores\ en\ donde\ cada\ jugador\ ha\ de\ jugar\ exactamente\ una\ vez\ contra\ cada\ uno\ de\ sus\ posibles\ n-1\ competidores,\ \r\n\ y\ adem\u00E1s\ ha\ de\ jugar\ un\ partido\ cada\ d\u00EDa,\ teniendo\ a\ lo\ sumo\ UN\ D\uFFFD?A\ DE\ DESCANSO\ en\ todo\ el\ torneo.\ Se\ supone\ que\ hay\ campos\ de\ tenis\ suficientes\ para\ jugar\ cada\ \r\n\ d\u00EDa\ todos\ los\ partidos\ necesarios.\r\n\ \r\n\ Se\ pide\ dise\u00F1ar\ para\ resolverlo\ un\ algoritmo\ basado\ en\ el\ esquema\ de\ Divide\ y\ Vencer\u00E1s.\r\n\ \r\n\ @Version\:\ 1.0\r\n\ @Fecha\:\ 04/01/2021\r\n\ @Author\:\ Paulino\ Berm\u00FAdez\ R.\r\n
+comment1.params=N
+comment1.target=TorneoTenis(int)
+comment1.text=\r\n\ N\u00FAmero\ de\ jugadores\:\ N.\r\n
+numComments=2

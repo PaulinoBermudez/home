@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Subida con script"
+echo "Subida de datos con script"
 git pull
 git add additionalContents/*
 git nota "Contenidos"

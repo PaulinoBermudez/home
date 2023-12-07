@@ -1,0 +1,5 @@
+R[1,1],S[2,1]
+
+Energía total consumida: 0
+
+Proceso completado, tiempo total de ejecución: 2 milisegundos.

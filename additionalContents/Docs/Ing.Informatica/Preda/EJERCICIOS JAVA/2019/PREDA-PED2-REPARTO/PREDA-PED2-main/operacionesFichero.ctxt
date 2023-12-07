@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=operacionesFichero
+comment1.params=cadena
+comment1.target=boolean\ isNumeric(java.lang.String)
+comment1.text=\r\n\ M\u00C3\u00A9todo\ que\ comprueba\ si\ el\ string\ que\ se\ le\ pasa\ es\ un\ n\u00C3\u00BAmero\r\n
+comment2.params=ficheroEntrada
+comment2.target=java.lang.Boolean\ comprobarFicheroEntrada(java.io.File)
+comment2.text=\r\n\ M\u00C3\u00A9todo\ que\ comprueba\ si\ el\ fichero\ de\ entrada\ es\ correcto\r\n
+numComments=3

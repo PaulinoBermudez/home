@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Sudoku
+comment0.text=\r\n\ \ Resolucion\ de\ tableros\ Sudoku.\r\n\r\n\ \ Se\ usa\ un\ algoritmo\ de\ prueba\ y\ error,\ y\ se\ basa\r\n\ \ en\ mantener\ tablas\ con\ informacion\ de\ que\ numeros\ ya\ han\ sido\ usados\ en\ cada\r\n\ \ fila,\ columna,\ y\ subcuadrado\ (3x3).\r\n
+comment1.params=
+comment1.target=Sudoku()
+comment1.text={\ 5,\ 3,\ 0,\ 0,\ 7,\ 0,\ 0,\ 0,\ 0\ },\ \r\n\ \ \ \ {\ 6,\ 0,\ 0,\ 1,\ 9,\ 5,\ 0,\ 0,\ 0\ },\ \r\n\ \ \ \ {\ 0,\ 9,\ 8,\ 0,\ 0,\ 0,\ 0,\ 6,\ 0\ },\ \r\n\ \ \ \ {\ 8,\ 0,\ 0,\ 0,\ 6,\ 0,\ 0,\ 0,\ 3\ },\ \r\n\ \ \ \ {\ 4,\ 0,\ 0,\ 8,\ 0,\ 3,\ 0,\ 0,\ 1\ },\ \r\n\ \ \ \ {\ 7,\ 0,\ 0,\ 0,\ 2,\ 0,\ 0,\ 0,\ 6\ },\ \r\n\ \ \ \ {\ 0,\ 6,\ 0,\ 0,\ 0,\ 0,\ 2,\ 8,\ 0\ },\ \r\n\ \ \ \ {\ 0,\ 0,\ 0,\ 4,\ 1,\ 9,\ 0,\ 0,\ 5\ },\ \r\n{\ 0,\ 0,\ 0,\ 0,\ 8,\ 0,\ 0,\ 7,\ 9\ }};
+comment2.params=linea\ columna
+comment2.target=boolean[]\ posibles(int,\ int)
+comment3.params=numero\ linea\ columna\ usado
+comment3.target=void\ marca(int,\ int,\ int,\ boolean)
+comment4.params=pos
+comment4.target=boolean\ intenta(int)
+comment5.params=
+comment5.target=void\ imprime()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

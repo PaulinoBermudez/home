@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Torneo
+comment0.text=\r\n\ \r\n\ @Fecha\ 04/01/2021\r\n\ @Version\ 1.0\r\n\ @Autor\ Paulino\ Esteban\ Berm\u00C3\u00BAdez\ Rodr\u00C3\u00ADguez\r\n\ \r\n
+comment1.params=matrix\ n
+comment1.target=void\ Torneo(int[][],\ int)
+comment2.params=valor
+comment2.target=void\ traza(boolean)
+comment3.params=n
+comment3.target=int\ valorNum(int)
+numComments=4

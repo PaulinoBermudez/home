@@ -1,0 +1,74 @@
+=== Sudoku Solver ===
+Contributors: Paul Varoutsos
+Link: www.GitHub.com/PaulVaroutsos
+Tags: SAT, SAT-solver, satisfiability, solver, Sudoku, Java
+Requires at least: Java 1.5
+
+A SAT-solver based Sudoku puzzle solver.
+
+== Description ==
+
+This is a Sudoku solver that transforms a Sudoku puzzle into an instance of a the NP-complete SAT problem.
+This Sudoku solver consists of three parts:
+1. A Sudoku-to-SAT and SAT-to-Sudoku mapper
+2. A SAT-Solver.
+3. A JFrame used to open the sudoku puzzle file.
+The mapper will first take the input of the Sudoku puzzle in from a file, using the file format outlined below.  
+It will then take the puzzle and map it into the CNF SAT format used by most SAT solvers.  From there it
+will pass the SAT-encoded Sudoku puzzle to the SAT solver to be solved.  After the SAT solver is finished, it will
+then pass the result back to the unmapper where the result will be unmapped back into a completed Sudoku puzzle.
+
+There is also a standalone SAT solver in its own package which can be used to read in any CNF format SAT files.
+
+Read LICENSE for license information. 
+
+Credit: Author (Paul Varoutsos) should be given proper credit if source is used.
+
+== Installation ==
+
+1. Download the SudokuSolver.jar file.
+2. Run the JAR and open the sudoku puzzle file of your choice.
+
+== Example Sudoku puzzle file format ==
+
+Comment lines start with a 'c' (no quotes)
+Puzzle values are given on one line each with the format:
+row column value 0
+So if the first row, fifth colmn has a 3:
+1 5 3 0
+
+Empty Sudoku squares are not included.
+
+Example.sudoku
+
+c An example Sudoku puzzle.
+1 1 3 0
+1 3 5 0
+1 4 6 0
+1 6 2 0
+2 9 9 0
+3 2 2 0
+3 5 8 0
+3 8 1 0
+4 1 5 0
+4 4 9 0
+4 7 1 0
+4 8 2 0
+5 5 4 0
+6 2 3 0
+6 3 2 0
+6 6 7 0
+6 9 6 0
+7 2 6 0
+7 5 5 0
+7 8 7 0
+8 1 4 0
+9 4 4 0
+9 6 6 0
+9 7 5 0
+9 9 3 0
+
+== Changelog ==
+
+1.1 GUI added.
+1.0 Initial version. 

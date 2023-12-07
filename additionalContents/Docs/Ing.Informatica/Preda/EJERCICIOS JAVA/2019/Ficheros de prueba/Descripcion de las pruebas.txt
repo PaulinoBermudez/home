@@ -1,0 +1,18 @@
+Nombre		Entrada											Resultado esperado
+------------------------------------------------------------------------------------------------------------------------------
+Prueba1 	0 objetos										Error, no hay objetos.
+Prueba2		El numero de objetos no coincide con el dato	Error, no coincide el numero de objetos.
+Prueba3		Un objeto no contiene beneficio					Error, el objeto "tal" no contiene beneficio
+Prueba4		Objeto con demasiados campos					Error, objeto con datos no aceptados.
+Prueba5		El numero de objetos no es un natural			.. (lo mismo que la entrada)
+Prueba6		El tamaño de la mochila no es un natural		..
+Prueba7		El beneficio de un objeto no es un natural		..
+Prueba8		El volumen de un objeto no es un natural		..
+Prueba9		El beneficio de un objeto es 0					Error, debe ser natural > 0
+Prueba10	El volumen de un objeto es 0					Error, debe ser natural > 0
+Prueba11	Tamaño mochila = 0								Error, debe ser natural > 0
+Prueba12	No se usa espacio para dividir volumen/benef	Error, objeto incorrecto.
+Prueba13	Espacios o tab, antes o despues de los elem		Solucion (uso trim() para evitar errores)
+Prueba14	Ejercicio correcto PED							Volumenes:3,5. Beneficio: 19
+Prueba15	Ejercicio correcto propio 1						Volumenes:8,2,3,7. Beneficio: 30
+Prueba16	Ejercicio correcto propio 2						Volumenes:8,10,2,3,7. Beneficio: 37

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Torneo
+comment0.text=\r\n\r\n\ @author\ pauli\r\n
+comment1.params=matrix\ n
+comment1.target=void\ Torneo(int[][],\ int)
+numComments=2

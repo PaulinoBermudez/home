@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Calendario
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Calendario\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=N
+comment1.target=Calendario(int)
+comment1.text=\r\n\ N\u00BA\ de\ equipos\ ->\ N\r\n
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=\r\n\ @param\ args\r\n
+numComments=3

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Test
+comment0.text=\n\ Programa\ para\ testear\ y\ medir\ tiempos\ en\ el\ Algoritmo\ resolucion\ de\ sudokus\n\ hexadecimales\n\n\ @author\ Cesar\ Aguilera,\ @cs4r\ on\ twitter\n\ @date\ 26/10/2012\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=x
+comment2.target=long\ moda(long[])
+numComments=3

@@ -1,0 +1,225 @@
+.hbg {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/m/en/lines.gif); BACKGROUND-REPEAT: repeat; BACKGROUND-COLOR: #006699
+}
+.tbg {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/m/en/gr760.gif); BACKGROUND-COLOR: #006699
+}
+.tbgc {
+	BACKGROUND-COLOR: #006699
+}
+.bbg {
+	VERTICAL-ALIGN: middle; BACKGROUND-COLOR: #000000
+}
+.dbg {
+	BACKGROUND-COLOR: #6699cc
+}
+.mbg {
+	BACKGROUND-COLOR: #99ccff
+}
+.lbg {
+	BACKGROUND-COLOR: #cce5ff
+}
+.hil {
+	BACKGROUND-COLOR: #ffffff
+}
+.country {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #99ccff; FONT-FAMILY: Verdana, sans-serif
+}
+.related {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+A:link {
+	COLOR: #006699
+}
+A:visited {
+	COLOR: #996699
+}
+A:hover {
+	COLOR: #006699
+}
+A.rlinks:link {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.rlinks:visited {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.rlinks:hover {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.highlight:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.highlight:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.highlight:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.mainlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.mainlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.mainlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.parent:link {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.parent:visited {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.parent:hover {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.nav:link {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.nav:visited {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.nav:hover {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.fbox:link {
+	FONT-SIZE: 12px; COLOR: #006699; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.fbox:visited {
+	FONT-SIZE: 12px; COLOR: #996699; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.fbox:hover {
+	FONT-SIZE: 12px; COLOR: #006699; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.bctl:link {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.bctl:visited {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.bctl:hover {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: underline
+}
+.divider {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.input {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; WIDTH: 150px; COLOR: #000000
+}
+.iform {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; BACKGROUND: #cccc99; COLOR: #000000; FONT-FAMILY: Arial
+}
+BODY {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+P {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+B {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+I {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+STRONG {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+EM {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DD {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DL {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+sl {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+CAPTION {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TH {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TR {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+U {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+BLINK {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+OPTION {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+FORM {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DIV {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+FONT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+LI {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+.title {
+	FONT-WEIGHT: normal; FONT-SIZE: 24px; FONT-FAMILY: Arial, sans-serif
+}
+.subtitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 15px; FONT-FAMILY: Arial, sans-serif
+}
+.boldtitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 24px; FONT-FAMILY: "Arial Black", Arial, sans-serif
+}
+UL {
+	MARGIN-TOP: 2px; FONT-SIZE: 12px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; FONT-FAMILY: Arial, sans-serif
+}
+OL {
+	MARGIN-TOP: 2px; FONT-SIZE: 12px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; FONT-FAMILY: Arial, sans-serif
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 35px; FONT-FAMILY: Arial, sans-serif
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 25px; FONT-FAMILY: Arial, sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; FONT-FAMILY: Arial, sans-serif
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; FONT-FAMILY: Arial, sans-serif
+}
+.small {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, sans-serif
+}
+.title1 {
+	FONT-SIZE: 25px; FONT-FAMILY: Arial, sans-serif
+}
+.tblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #6699cc; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.tdblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #006699; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.tgray {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #666666; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.bct {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif
+}
+.fnt {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, sans-serif
+}

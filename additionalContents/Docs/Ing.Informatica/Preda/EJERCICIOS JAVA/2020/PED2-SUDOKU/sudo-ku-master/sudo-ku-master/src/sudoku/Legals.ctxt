@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Legals
+comment0.text=\r\n\ \r\n\ @author\ Brian\ Lau\r\n\ \r\n\ \ \ \ \ \ \ \ \ Creates\ a\ N*N*N\ matrix\ that\ contains\ booleans.\ L[i,j,k]\ is\ true\ if\ an\r\n\ \ \ \ \ \ \ \ \ option\ is\ allowed\ on\ the\ grid[i,j].\r\n\ \r\n
+comment1.params=n
+comment1.target=Legals(int)
+comment2.params=n\ grid
+comment2.target=Legals(int,\ int[][])
+comment3.params=
+comment3.target=void\ clear()
+comment3.text=\r\n\ Method\ sets\ all\ elements\ to\ true\r\n
+comment4.params=grid
+comment4.target=void\ update(int[][])
+comment4.text=\r\n\ \r\n\ @param\ grid\r\n\ \ \ \ \ \ \ \ \ \ \ \ A\ grid\ is\ added\ to\ the\ boolean\ grid\r\n
+comment5.params=i\ j\ notPossible
+comment5.target=void\ set(int,\ int,\ int)
+comment5.text=\r\n\ Method\ takes\ a\ value\ at\ a\ specific\ space\ and\ makes\ sure\ that\ this\ value\r\n\ cannot\ exist\ more\ than\ once\ in\ the\ same\ row\ or\ column\r\n\ \r\n\ @param\ i\r\n\ \ \ \ \ \ \ \ \ \ \ \ Row\ for\ the\ boolean\ array\r\n\ @param\ j\r\n\ \ \ \ \ \ \ \ \ \ \ \ Column\ for\ the\ boolean\ array\r\n\ @param\ notPossible\r\n\ \ \ \ \ \ \ \ \ \ \ \ Value\ to\ eliminate\ from\ other\ columns\ and\ rows\r\n
+comment6.params=i\ j\ k
+comment6.target=boolean\ get(int,\ int,\ int)
+comment6.text=\r\n\ \r\n\ @param\ i\r\n\ \ \ \ \ \ \ \ \ \ \ \ The\ specific\ row\r\n\ @param\ j\r\n\ \ \ \ \ \ \ \ \ \ \ \ The\ specific\ column\r\n\ @param\ k\r\n\ \ \ \ \ \ \ \ \ \ \ \ A\ possible\ number\ for\ the\ particular\ row\ and\ column\r\n\ @return\ Returns\ true\ or\ false\ for\ the\ value,\ if\ true\ the\ element\ is\ a\r\n\ \ \ \ \ \ \ \ \ possible\ value\ for\ the\ specific\ space,\ otherwise\ it\ is\ not\ a\r\n\ \ \ \ \ \ \ \ \ possibility.\r\n
+comment7.params=i\ j
+comment7.target=int[]\ countCandidates(int,\ int)
+comment7.text=\r\n\ Method\ counts\ the\ number\ of\ possibilities\ at\ a\ particular\ row\ and\ column\r\n\ \r\n\ @param\ i\r\n\ \ \ \ \ \ \ \ \ \ \ \ The\ numbered\ row\r\n\ @param\ j\r\n\ \ \ \ \ \ \ \ \ \ \ \ The\ numbered\ column\r\n\ @return\ The\ number\ of\ possible\ values\ at\ the\ specific\ column\ and\ row\r\n
+numComments=8

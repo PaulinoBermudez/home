@@ -1,0 +1,24 @@
+Resolución del SUDOKU.
+https://www.geeksforgeeks.org/sudoku-backtracking-7/
+https://medium.com/swlh/simple-sudoku-with-backtracking-bb4813ddabb1
+https://dev.to/christinamcmahon/use-backtracking-algorithm-to-solve-sudoku-270
+https://hackernoon.com/sudoku-and-backtracking-6613d33229af
+----> creo que con backtraking --- https://www.programmersought.com/article/59343975809/
+----> USANDO ROUND ROBIN --- https://www.programmersought.com/article/63135026096/
+
+Divide y vencerás
+Solucion a practica: https://www.programmersought.com/article/12555130995/
+https://www.programmersought.com/article/32935203737/
+
+
+____________________________________________________________________________________________________
+Ejercicios de backtranking de ensayo: 
+
+https://www.geeksforgeeks.org/category/backtracking/
+
+___________________________________________________
+Ejercicios de divide y vencerás: 
+
+https://www.geeksforgeeks.org/divide-and-conquer/
+https://www.programmersought.com/article/23033190175/
+

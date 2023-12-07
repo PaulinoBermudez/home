@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=SolveTest
+comment1.params=
+comment1.target=void\ testInvalidGrid()
+comment2.params=
+comment2.target=void\ testGameGrid()
+comment2.text=\r\n\ \r\n\ @author\ Walter\r\n\ Creates\ an\ instance\ of\ the\ Solve\ Class.\r\n\ Creates\ an\ instance\ of\ the\ GameGrid\ Class.\r\n\ Uses\ assertTrue\ to\ test\ to\ see\ if\ the\ GameGrid\ Class\r\n\ is\ generating\ a\ valid\ sudoku\ grid.\r\n
+numComments=3

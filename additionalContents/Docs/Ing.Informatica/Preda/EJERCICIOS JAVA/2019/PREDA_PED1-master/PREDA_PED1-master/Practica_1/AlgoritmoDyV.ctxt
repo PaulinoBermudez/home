@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=trazabilidad_p
+comment0.target=AlgoritmoDyV(boolean)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ AlgoritmoVoraz\r\n
+comment1.params=numeroA_p\ numeroB_p
+comment1.target=java.math.BigInteger\ ejecutarAlgoritmoDyV(java.math.BigInteger,\ java.math.BigInteger)
+comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment2.params=numeroA_p\ numeroB_p
+comment2.target=boolean\ esSolucionTrivial(java.math.BigInteger,\ java.math.BigInteger)
+numComments=3
