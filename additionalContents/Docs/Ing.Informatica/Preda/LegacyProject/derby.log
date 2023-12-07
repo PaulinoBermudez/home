@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+Thu Oct 06 10:46:59 CEST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0183-ac79-fce6-00000d677000 
+on database directory D:\2.Documentos\Univeridad Kevin\2º año, 1º Semestre\Ingeniera de Software\lab\Codigos\ISO_1\LegacyProject\iso1_db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Loaded from file:/D:/2.Documentos/Univeridad%20Kevin/2%c2%ba%20a%c3%b1o,%201%c2%ba%20Semestre/Ingeniera%20de%20Software/lab/Codigos/ISO_1/LegacyProject/lib/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=17+35-LTS-2724
+user.dir=D:\2.Documentos\Univeridad Kevin\2º año, 1º Semestre\Ingeniera de Software\lab\Codigos\ISO_1\LegacyProject
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 06 10:47:00 CEST 2022: Shutting down Derby engine
+----------------------------------------------------------------
+Thu Oct 06 10:47:01 CEST 2022:
+Shutting down instance a816c00e-0183-ac79-fce6-00000d677000 on database directory D:\2.Documentos\Univeridad Kevin\2º año, 1º Semestre\Ingeniera de Software\lab\Codigos\ISO_1\LegacyProject\iso1_db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+----------------------------------------------------------------
