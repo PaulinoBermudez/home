@@ -1,0 +1,6 @@
+var msie = navigator.appVersion.indexOf('MSIE 6');
+var x11 = navigator.appVersion.indexOf('X11');
+
+if((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4 )){if((navigator.appVersion.indexOf("Macintosh"))!= -1){document.write('<link rel="stylesheet" href="//www.ibm.com/data/css/v11/r1.css" type="text/css"/>')}else if (msie != -1){document.write('<link rel="stylesheet" href="//www.ibm.com/data/css/v11/ie6.css" type="text/css"/>')}else{document.write('<link rel="stylesheet" href="//www.ibm.com/data/css/v11/ie1.css" type="text/css"/>')}}
+else if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) >= 4))
+{if((navigator.appVersion.indexOf("Macintosh"))!= -1){document.write('<link rel="stylesheet" href="//www.ibm.com/data/css/v11/r1.css" type="text/css"/>')}else if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) >= 5)){document.write('<link rel="stylesheet" href="//www.ibm.com/data/css/v11/r1.css" type="text/css"/>')}else if (x11 != -1){document.write('<link rel="stylesheet" href="//www.ibm.com/data/css/v11/r1.css" type="text/css"/>')}else{document.write('<link rel="stylesheet" href="//www.ibm.com/data/css/v11/ns1.css" type="text/css"/>')}}else{document.write('<link rel="stylesheet" href="//www.ibm.com/data/css/v11/r1.css" type="text/css"/>')}

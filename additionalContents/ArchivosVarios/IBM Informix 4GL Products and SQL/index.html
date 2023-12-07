@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML lang=en-us><HEAD><TITLE>Documentation for IBM Informix 4GL Products and SQL</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="(c) Copyright IBM Corporation 2001,2002" name=Copyright>
+<STYLE type=text/css>
+.hbg {
+	BACKGROUND-COLOR: #006699
+}
+.tbg {
+	BACKGROUND-COLOR: #006699
+}
+.tbgc {
+	BACKGROUND-COLOR: #006699
+}
+.bbg {
+	VERTICAL-ALIGN: middle; BACKGROUND-COLOR: #000000
+}
+.dbg {
+	BACKGROUND-COLOR: #6699cc
+}
+.mbg {
+	BACKGROUND-COLOR: #99ccff
+}
+.lbg {
+	BACKGROUND-COLOR: #cce5ff
+}
+.hil {
+	BACKGROUND-COLOR: #ffffff
+}
+.country {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #99ccff; FONT-FAMILY: Verdana, sans-serif
+}
+.related {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+A:link {
+	COLOR: #006699
+}
+A:visited {
+	COLOR: #996699
+}
+A:hover {
+	COLOR: #006699
+}
+A.rlinks:link {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.rlinks:visited {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.rlinks:hover {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.highlight:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.highlight:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.highlight:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.mainlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.mainlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.mainlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.parent:link {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.parent:visited {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.parent:hover {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.nav:link {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.nav:visited {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.nav:hover {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.fbox:link {
+	FONT-SIZE: 12px; COLOR: #006699; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.fbox:visited {
+	FONT-SIZE: 12px; COLOR: #996699; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.fbox:hover {
+	FONT-SIZE: 12px; COLOR: #006699; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.bctl:link {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.bctl:visited {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: none
+}
+A.bctl:hover {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; TEXT-DECORATION: underline
+}
+.divider {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.input {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; WIDTH: 150px; COLOR: #000000
+}
+.iform {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; BACKGROUND: #cccc99; COLOR: #000000; FONT-FAMILY: Arial
+}
+BODY {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+P {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+B {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+I {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+STRONG {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+EM {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DD {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DL {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+sl {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+CAPTION {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TH {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TR {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+U {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+BLINK {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+OPTION {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+FORM {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DIV {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+FONT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+LI {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+.title {
+	FONT-WEIGHT: normal; FONT-SIZE: 24px; FONT-FAMILY: Arial, sans-serif
+}
+.subtitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 15px; FONT-FAMILY: Arial, sans-serif
+}
+.boldtitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 24px; FONT-FAMILY: "Arial Black", Arial, sans-serif
+}
+UL {
+	MARGIN-TOP: 2px; FONT-SIZE: 12px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; FONT-FAMILY: Arial, sans-serif
+}
+OL {
+	MARGIN-TOP: 2px; FONT-SIZE: 12px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; FONT-FAMILY: Arial, sans-serif
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 35px; FONT-FAMILY: Arial, sans-serif
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 25px; FONT-FAMILY: Arial, sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; FONT-FAMILY: Arial, sans-serif
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; FONT-FAMILY: Arial, sans-serif
+}
+.small {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, sans-serif
+}
+.title1 {
+	FONT-SIZE: 25px; FONT-FAMILY: Arial, sans-serif
+}
+.tblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #6699cc; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.tdblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #006699; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.tgray {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #666666; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.bct {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif
+}
+.fnt {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, sans-serif
+}
+
+</STYLE>
+
+<STYLE type=text/css>.dkgd {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #999966; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.hdgd {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.mdgd {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #cccc99; COLOR: #666633; FONT-FAMILY: Arial, sans-serif
+}
+.flgd {
+	BACKGROUND: #f7f7e7
+}
+.sth {
+	FONT-SIZE: 11px; COLOR: #ffffff
+}
+.gbg {
+	BACKGROUND-COLOR: #cccccc
+}
+.dgbg {
+	BACKGROUND-COLOR: #999999
+}
+A.pref:link {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.pref:visited {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.pref:hover {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+</STYLE>
+
+<STYLE type=text/css>.smb {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; FONT-FAMILY: Arial, sans-serif
+}
+.vert {
+	FONT-SIZE: 10px; FONT-FAMILY: Arial, sans-serif
+}
+A.sbold:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #006699; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+A.sbold:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #996699; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+A.sbold:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #006699; FONT-FAMILY: verdana; TEXT-DECORATION: underline
+}
+A.ver:link {
+	FONT-SIZE: 10px; COLOR: #006699; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+A.ver:visited {
+	FONT-SIZE: 10px; COLOR: #996699; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+A.ver:hover {
+	FONT-SIZE: 10px; COLOR: #006699; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+A.detl:link {
+	FONT-SIZE: 10px; COLOR: #006699; FONT-FAMILY: verdana; TEXT-DECORATION: underline
+}
+A.detl:visited {
+	FONT-SIZE: 10px; COLOR: #996699; FONT-FAMILY: verdana; TEXT-DECORATION: underline
+}
+A.detl:hover {
+	FONT-SIZE: 10px; COLOR: #006699; FONT-FAMILY: verdana; TEXT-DECORATION: underline
+}
+</STYLE>
+
+<STYLE type=text/css>A.prefs:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.prefs:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.prefs:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+</STYLE>
+<META content="MSHTML 5.50.4522.1800" name=GENERATOR></HEAD>
+<BODY aLink=#006699 bgColor=#ffffff leftMargin=2 topMargin=2 marginheight="2"
+marginwidth="2">
+<TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+  <TBODY>
+  <TR>
+    <TD class=tbgc width=150><A href="http://www.ibm.com/"><IMG height=47
+      alt=IBM src="index_files/lanim.gif" width=150 border=0></A></TD>
+    <TD class=tbg width=310>&nbsp;</TD>
+    <TD class=tbgc vAlign=top align=right width=300>&nbsp; </TD>
+  </TR>
+  <TR>
+    <TD class=hbg width=150 height=21>&nbsp;</TD>
+    <TD class=bbg vAlign=top colSpan=2 height=21>&nbsp;&nbsp;&nbsp; <A
+      class=highlight href="http://www.ibm.com/us">Home</A><SPAN
+      class=divider>&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class=mainlink
+      href="http://www.ibm.com/products/us">Products &amp; services</A><SPAN
+      class=divider>&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class=mainlink
+      href="http://www.ibm.com/support/us">Support &amp; downloads</A><SPAN
+      class=divider>&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class=mainlink
+      href="http://www.ibm.com/account/us">My account</A></TD></TR></TBODY></TABLE>
+<TABLE cellPadding=0 width=760 border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD class=dbg width=150>&nbsp; </TD>
+    <TD width=610>
+      <h2>Documentation for IBM Informix 4GL Products and SQL</h2>
+      <P>To open a manual, click on the appropriate link below. You must have
+        Adobe Acrobat 4.0 or newer already installed to open the PDF versions
+        of these manuals. <a href="http://www.adobe.com/prodindex/acrobat/readstep.html">Get
+        Adobe Acrobat Reader</a></P>
+
+      <P>Refer to the documentation notes on your product CD for updates to specific
+        manuals.</P>
+      <P align="center"><a href="#4gl731">4GL Products v7.31</a> | <a href="#4gl732">4GL
+        Products v7.32</a> | <a href="#sql731">SQL v7.31</a> | <a href="#sql732">SQL
+        v7.32</a></P>
+      <h4><a name="4gl731"></a>IBM Informix 4GL Products, v7.31</h4>
+      <table border=0>
+        <tr>
+          <td><a href="././5451a.pdf">4GL by Example, v7.3</a></td>
+        </tr>
+        <tr>
+          <td><a href="./8775.pdf">4GL Concepts and Use, v7.31</a></td>
+        </tr>
+        <td><a href="./8772.pdf">4GL Installation Guide, v7.31</a></td>
+        </tr>
+        <td><a href="./8776.pdf">4GL Reference Manual, v7.31</a> </td>
+        </tr>
+        <td><a href="./8332.pdf">Guide to GLS Functionality, XPS v8.3, IDS v9.3</a></td>
+        </tr>
+        <td><a href="./5297a.pdf">Guide to the IBM Informix 4GL Interactive Debugger,
+          v7.3 </a></td>
+        </tr>
+      </table>
+      <h4><a name="4gl732"></a>IBM Informix 4GL Products, v7.32</h4>
+      <table border=0>
+        <tr>
+          <td><a href="./5451a.pdf">4GL by Example, v7.3</a></td>
+        </tr>
+        <tr>
+          <td><a href="./8775.pdf">4GL Concepts and Use, v7.31</a></td>
+        </tr>
+        <td><a href="./ct1uxna.pdf">4GL Installation Guide, v7.32</a></td>
+        </tr>
+        <td><a href="./ct1vbna_ct1vcna_ct1vyna.pdf">4GL Reference Manual, v7.32</a>
+        </td>
+        </tr>
+        <td><a href="./ct1snna.pdf">GLS User’s Guide, XPS v8.4, IDS v9.4</a></td>
+        </tr>
+        <td><a href="./5297a.pdf">Guide to the IBM Informix 4GL Interactive Debugger,
+          v7.3 </a></td>
+        </tr>
+      </table>
+      <h4><a name="sql731"></a>IBM Informix SQL, v7.31</h4>
+      <table border=0 width="297">
+        <tr valign="top">
+          <td><a href="./8332.pdf">Guide to GLS Functionality, XPS v8.3, IDS v9.3</a></td>
+        </tr>
+        <td><a href="./5471a.pdf">SQL Reference Manual, v7.3</a></td>
+        </tr>
+        <td><a href="./5470a.pdf">SQL User Guide, v7.3</a></td>
+        </tr>
+        <td><a href="./3627a.pdf">UNIX Products Installation Guide, v7.21</a></td>
+        </tr>
+      </table>
+      <h4><a name="sql732"></a>IBM Informix SQL, v7.32</h4>
+      <table border=0 width="300">
+        <tr>
+          <td><a href="./ct1snna.pdf">GLS User’s Guide, XPS v8.4, IDS v9.4</a></td>
+        </tr>
+        <td><a href="./5471a.pdf">SQL Reference Manual, v7.3</a></td>
+        </tr>
+        <td><a href="./5470a.pdf">SQL User Guide, v7.3</a></td>
+        </tr>
+        <td><a href="./3627a.pdf">UNIX Products Installation Guide, v7.21</a></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      </TD>
+  </TR>
+  <TR vAlign=top>
+    <TD class=dbg width=150 height=10>&nbsp;</TD>
+    <TD width=600 height=10>&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=1 alt="" src="index_files/c.gif" width=1></TD></TR>
+  <TR vAlign=top>
+    <TD class=bbg height=21>&nbsp;&nbsp;<A class=mainlink
+      href="http://www.ibm.com/ibm/us">About IBM</A><SPAN
+      class=divider>&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class=mainlink
+      href="http://www.ibm.com/privacy/us">Privacy</A><SPAN
+      class=divider>&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class=mainlink
+      href="http://www.ibm.com/legal/us">Legal</A><SPAN
+      class=divider>&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class=mainlink
+      href="http://www.ibm.com/contact/us">Contact</A><SPAN
+      class=divider>&nbsp;&nbsp;</SPAN></TD>
+    <TD class=bbg align=right height=21>&nbsp;&nbsp;</TD></TR></TBODY></TABLE>
+</BODY></HTML>
