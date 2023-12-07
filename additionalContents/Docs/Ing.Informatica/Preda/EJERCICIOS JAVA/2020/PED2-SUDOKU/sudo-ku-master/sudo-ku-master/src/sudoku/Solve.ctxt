@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Solve
+comment0.text=\r\n\ \r\n\ @author\ Brian\ Lau\r\n\ \r\n\ \ \ \ \ \ \ \ \ Attempts\ to\ solve\ a\ sudoku\ puzzle\r\n
+comment1.params=
+comment1.target=Solve()
+comment2.params=dimension\ gridCopy
+comment2.target=int\ solve(int,\ int[][])
+comment2.text=\r\n\ \r\n\ Solves\ a\ grid\ with\ the\ given\ numbers,\ also\ checks\ for\ a\ unique\ solution\r\n\ if\ found\ returns\ an\ integer\ with\ the\ difficulty\ of\ the\ puzzle,\ if\ not\r\n\ returns\ 0.\r\n\ \r\n\ @return\ Difficulty\ of\ the\ puzzle\r\n
+comment3.params=i\ j
+comment3.target=int[]\ rc2box(int,\ int)
+comment3.text=\r\n\ Method\ returns\ the\ 3x3\ box\ that\ the\ space\ currently\ occupies.\r\n\ \r\n\ @param\ i\r\n\ \ \ \ \ \ \ \ \ \ \ \ A\ particular\ row\r\n\ @param\ j\r\n\ \ \ \ \ \ \ \ \ \ \ \ A\ particular\ column\r\n\ @return\ The\ 3x3\ box\ the\ space\ is\ in\r\n
+comment4.params=i\ j\ K
+comment4.target=void\ fillSquare(int,\ int,\ int)
+comment4.text=\r\n\ When\ K\ is\ found\ on\ the\ grid[i][j]\ it\ is\ passed\ to\ this\ function\ so\ the\ L\r\n\ and\ the\ grid\ are\ updated.\r\n\ \r\n\ @param\ i\r\n\ \ \ \ \ \ \ \ \ \ \ \ The\ row\ that\ is\ being\ checked\r\n\ @param\ j\r\n\ \ \ \ \ \ \ \ \ \ \ \ The\ column\ being\ checked\r\n\ @param\ K\r\n\ \ \ \ \ \ \ \ \ \ \ \ The\ number\ that\ grid[i][j]\ will\ have\r\n
+comment5.params=
+comment5.target=int\ countNumKnown()
+comment5.text=\r\n\ This\ method\ counts\ the\ number\ of\ known\ values\ are\ in\ the\ grid\r\n\ \r\n\ @return\ Integer\ of\ how\ many\ values\ are\ known\r\n
+numComments=6

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Solver
+comment0.text=\r\n\ Project\:\ \t\t\tSudoku\r\n\r\n\r\n\ @author\ \tClaire\ Giry\ \ \ \ \ \ \ \ \ \ \ <br>\r\n\t\t\tHans-Peter\ Hoellwirth\ <br>\r\n\t\t\tScott\ Cantisani\ \ \ \ \ \ \ <br>\r\n\t\t\tSimranbir\ Singh\ \ \ \ \ \ \ <br>\r\n\t\t\tOana\ Radu\ \ \ \ \ \ \ \ \ \ \ \ \ <br>\r\n\r\n\ @since\r\n\ Creation\ date\:\t28.02.2013\ <br>\ \r\n\ Last\ updated\:\t\t08.03.2013\ <br>\r\n
+comment1.params=board
+comment1.target=Solver(Board)
+comment1.text=\r\n\ Create\ new\ solver\ object.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Hans-Peter\ Hoellwirth\ <br>\r\n\ Edited\ by\:\ \ -\r\n\r\n\ @param\ board\ board\ to\ solve\r\n
+comment2.params=board\ generated
+comment2.target=Solver(Board,\ boolean)
+comment2.text=\r\n\ Create\ new\ solver\ object.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Hans-Peter\ Hoellwirth\ <br>\r\n\ Edited\ by\:\ \ -\r\n\r\n\ @param\ board\ board\ to\ solve\r\n\ @param\ generated\ is\ solver\ used\ for\ generator\ \r\n
+comment3.params=
+comment3.target=Board\ getBoard()
+comment3.text=\r\n\ Get\ the\ board.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Hans-Peter\ Hoellwirth\ <br>\r\n\ Edited\ by\:\ \ -\r\n\r\n\ @return\ board\ \r\n
+comment4.params=
+comment4.target=boolean\ solveBoard()
+comment4.text=\r\n\ Solve\ board.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Scott\ Cantisani\ <br>\r\n\ Edited\ by\:\ \ -\r\n
+comment5.params=i\ j\ n
+comment5.target=boolean\ solveBoard(int,\ int,\ int)
+comment5.text=\r\n\ Solve\ board.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Scott\ Cantisani\ <br>\r\n\ Edited\ by\:\ \ -\r\n
+comment6.params=i\ j
+comment6.target=int[]\ next(int,\ int)
+comment6.text=\r\n\ Get\ next\ cell,\ reading\ left\ to\ right\ and\ top\ to\ bottom.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Scott\ Cantisani\ <br>\r\n\ Edited\ by\:\ \ -\r\n
+numComments=7

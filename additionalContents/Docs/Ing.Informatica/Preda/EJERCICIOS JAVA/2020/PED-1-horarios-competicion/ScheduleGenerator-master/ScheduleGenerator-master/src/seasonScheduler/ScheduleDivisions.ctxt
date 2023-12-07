@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ScheduleDivisions
+comment1.params=names\ division_arr\ num_weeks
+comment1.target=ScheduleDivisions(java.lang.String[],\ java.lang.String[],\ int)
+comment2.params=
+comment2.target=boolean\ scheduleAll()
+comment3.params=team1\ team2\ week
+comment3.target=boolean\ validSchedule(Team,\ Team,\ int)
+numComments=4

@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Sudoku
+comment1.params=level
+comment1.target=Sudoku(int)
+comment1.text=\r\n\ Create\ new\ Sudoku\ object.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Hans-Peter\ Hoellwirth\ <br>\r\n\ Edited\ by\:\ \ -\r\n\ \r\n\ @param\ level\ level\ of\ difficulty\r\n
+comment2.params=
+comment2.target=Board\ getBoard()
+comment2.text=\r\n\ Get\ board.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Hans-Peter\ Hoellwirth\ \ <br>\r\n\ Edited\ by\:\ \ -\r\n\ \r\n\ return\ board\r\n
+comment3.params=
+comment3.target=void\ generateBoard()
+comment3.text=\r\n\ Generate\ board.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Scott\ Cantisani\ <br>\r\n\ Edited\ by\:\ \ -\r\n
+comment4.params=
+comment4.target=void\ getSolution()
+comment4.text=\r\n\ Compute\ solution.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Hans-Peter\ Hoellwirth\ <br>\r\n\ Edited\ by\:\ \ -\ \r\n
+comment5.params=
+comment5.target=boolean[][]\ checkBoard()
+comment5.text=\r\n\ Check\ board.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Scott\ Cantisani\ <br>\r\n\ Edited\ by\:\ \ -\ \r\n
+comment6.params=
+comment6.target=boolean\ isSolved()
+comment6.text=\r\n\ Is\ board\ successfully\ solved.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Hans-Peter\ Hoellwirth\ <br>\r\n\ Edited\ by\:\ \ -\ \r\n\ \r\n\ @return\ true\ if\ solved,\ otherwise\ false\r\n
+comment7.params=
+comment7.target=void\ solveBoard()
+comment7.text=\r\n\ Solve\ board.\ <p>\r\n\ \r\n\ @author\ \r\n\ Created\ by\:\ Hans-Peter\ Hoellwirth\ <br>\r\n\ Edited\ by\:\ \ -\ \r\n
+numComments=8

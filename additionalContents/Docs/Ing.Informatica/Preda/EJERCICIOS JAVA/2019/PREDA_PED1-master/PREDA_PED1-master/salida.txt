@@ -1,0 +1,1678 @@
+MULTIPLICANDO A = 4728474577674616161839303495756453524262737373736272827367382726364784585746383647437
+MULTIPLICANDO B = 13142635242626253673748586970695656453524123131425364758696968574634535423535475869457362618191726363727252424253738
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 4728474577674616161839303495756453524262737373736272827367382726364784585746383647437 y B: 13142635242626253673748586970695656453524123131425364758696968574634535423535475869457362618191726363727252424253738 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 383 pueden multiplicarse mediante 3 multiplicaciones de tamaño 192
+Los numeros  4728474577674616161839303495756453524262737373736272827367382726364784585746383647437 y  13142635242626253673748586970695656453524123131425364758696968574634535423535475869457362618191726363727252424253738 los dividimos en > aL: 2095297311866543542424286731492843614327364923239412806349 aR: 753289460168886942214223778 bL: 447895831156839221374771699937818879222194200340030054698 bR: 2093742589599217908792876624328585356980785335263630717990
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 2095297311866543542424286731492843614327364923239412806349 * 447895831156839221374771699937818879222194200340030054698 ; q = aR * bR > q = 753289460168886942214223778 * 2093742589599217908792876624328585356980785335263630717990 ; r = (aL + aR) * (bL + bR) > r = (2095297311866543542424286731492843614327364923239412806349 + 753289460168886942214223778) * (447895831156839221374771699937818879222194200340030054698 + 2093742589599217908792876624328585356980785335263630717990)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2095297311866543542424286731492843614327364923239412806349 y B: 447895831156839221374771699937818879222194200340030054698 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 191 pueden multiplicarse mediante 3 multiplicaciones de tamaño 96
+Los numeros  2095297311866543542424286731492843614327364923239412806349 y  447895831156839221374771699937818879222194200340030054698 los dividimos en > aL: 32214769318467566366298223309 aR: 26446370146339107517899123015 bL: 653595055365058287344574762 bR: 5653240172977626422296920476
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 32214769318467566366298223309 * 653595055365058287344574762 ; q = aR * bR > q = 26446370146339107517899123015 * 5653240172977626422296920476 ; r = (aL + aR) * (bL + bR) > r = (32214769318467566366298223309 + 26446370146339107517899123015) * (653595055365058287344574762 + 5653240172977626422296920476)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 32214769318467566366298223309 y B: 653595055365058287344574762 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  32214769318467566366298223309 y  653595055365058287344574762 los dividimos en > aL: 116476408771277 aR: 114449851617122 bL: 228926401569066 bR: 2322036093591
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 116476408771277 * 228926401569066 ; q = aR * bR > q = 114449851617122 * 2322036093591 ; r = (aL + aR) * (bL + bR) > r = (116476408771277 + 114449851617122) * (228926401569066 + 2322036093591)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 116476408771277 y B: 228926401569066 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  116476408771277 y  228926401569066 los dividimos en > aL: 16265933 aR: 6942534 bL: 14180650 bR: 13645076
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 16265933 * 14180650 ; q = aR * bR > q = 6942534 * 13645076 ; r = (aL + aR) * (bL + bR) > r = (16265933 + 6942534) * (14180650 + 13645076)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 16265933 y B: 14180650 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 6942534 y B: 13645076 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 23208467 y B: 27825726 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 230661502796450 , q = 94731404062584 , r = 645792443622042
+Calculamos el valor de s = (r - p - q) > s = 320399536763008
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 26664525127696039817912517282
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 114449851617122 y B: 2322036093591 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  114449851617122 y  2322036093591 los dividimos en > aL: 12586850 aR: 6821742 bL: 2290327 bR: 138404
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 12586850 * 2290327 ; q = aR * bR > q = 6821742 * 138404 ; r = (aL + aR) * (bL + bR) > r = (12586850 + 6821742) * (2290327 + 138404)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 12586850 y B: 2290327 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 6821742 y B: 138404 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 19408592 y B: 2428731 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 28828002399950 , q = 944156379768 , r = 47138249056752
+Calculamos el valor de s = (r - p - q) > s = 17366090277034
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 265756686361091563090065102
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 230926260388399 y B: 231248437662657 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  230926260388399 y  231248437662657 los dividimos en > aL: 12075567 aR: 13764277 bL: 16470977 bR: 13783480
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 12075567 * 16470977 ; q = aR * bR > q = 13764277 * 13783480 ; r = (aL + aR) * (bL + bR) > r = (12075567 + 13764277) * (16470977 + 13783480)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 12075567 y B: 16470977 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 13764277 y B: 13783480 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 25839844 y B: 30254457 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 198896386318959 , q = 189719636743960 , r = 781770449184708
+Calculamos el valor de s = (r - p - q) > s = 393154426121789
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 53401336930097184612558316143
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 26664525127696039817912517282 , q = 265756686361091563090065102 , r = 53401336930097184612558316143
+Calculamos el valor de s = (r - p - q) > s = 26471055116040053231555733759
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 21055413936276390069497161123583644812713426800721527458
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 26446370146339107517899123015 y B: 5653240172977626422296920476 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  26446370146339107517899123015 y  5653240172977626422296920476 los dividimos en > aL: 43005261293895 aR: 93956380973520 bL: 34731424694684 bR: 20084343692082
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 43005261293895 * 34731424694684 ; q = aR * bR > q = 93956380973520 * 20084343692082 ; r = (aL + aR) * (bL + bR) > r = (43005261293895 + 93956380973520) * (34731424694684 + 20084343692082)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 43005261293895 y B: 34731424694684 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 46 pueden multiplicarse mediante 3 multiplicaciones de tamaño 23
+Los numeros  43005261293895 y  34731424694684 los dividimos en > aL: 5417287 aR: 5126626 bL: 3883420 bR: 4140308
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 5417287 * 3883420 ; q = aR * bR > q = 5126626 * 4140308 ; r = (aL + aR) * (bL + bR) > r = (5417287 + 5126626) * (3883420 + 4140308)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 5417287 y B: 3883420 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 5126626 y B: 4140308 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 10543913 y B: 8023728 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 21037600681540 , q = 21225810640808 , r = 84601489967664
+Calculamos el valor de s = (r - p - q) > s = 42338078645316
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 1493633994104122793168154180
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 93956380973520 y B: 20084343692082 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  93956380973520 y  20084343692082 los dividimos en > aL: 11950544 aR: 5600236 bL: 2874162 bR: 1197120
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 11950544 * 2874162 ; q = aR * bR > q = 5600236 * 1197120 ; r = (aL + aR) * (bL + bR) > r = (11950544 + 5600236) * (2874162 + 1197120)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 11950544 y B: 2874162 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 5600236 y B: 1197120 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 17550780 y B: 4071282 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 34347799444128 , q = 6704154520320 , r = 71454174699960
+Calculamos el valor de s = (r - p - q) > s = 30402220735512
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 1887052247536369654275668640
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 136961642267415 y B: 54815768386766 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  136961642267415 y  54815768386766 los dividimos en > aL: 590615 aR: 8163550 bL: 6757582 bR: 3267274
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 590615 * 6757582 ; q = aR * bR > q = 8163550 * 3267274 ; r = (aL + aR) * (bL + bR) > r = (590615 + 8163550) * (6757582 + 3267274)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 590615 y B: 6757582 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 8163550 y B: 3267274 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 8754165 y B: 10024856 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 3991129292930 , q = 26672554662700 , r = 87759243525240
+Calculamos el valor de s = (r - p - q) > s = 57095559569610
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 7507657660401721132919029890
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 1493633994104122793168154180 , q = 1887052247536369654275668640 , r = 7507657660401721132919029890
+Calculamos el valor de s = (r - p - q) > s = 4126971418761228685475207070
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 149507682140720431583720118165687976631722088455596355140
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 58661139464806673884197346324 y B: 6306835228342684709641495238 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 96 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  58661139464806673884197346324 y  6306835228342684709641495238 los dividimos en > aL: 159481670065172 aR: 208406232590642 bL: 263657826263750 bR: 22406379785673
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 159481670065172 * 263657826263750 ; q = aR * bR > q = 208406232590642 * 22406379785673 ; r = (aL + aR) * (bL + bR) > r = (159481670065172 + 208406232590642) * (263657826263750 + 22406379785673)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 159481670065172 y B: 263657826263750 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  159481670065172 y  263657826263750 los dividimos en > aL: 4906004 aR: 9505848 bL: 1286854 bR: 15715231
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 4906004 * 1286854 ; q = aR * bR > q = 9505848 * 15715231 ; r = (aL + aR) * (bL + bR) > r = (4906004 + 9505848) * (1286854 + 15715231)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 4906004 y B: 1286854 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 9505848 y B: 15715231 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 14411852 y B: 17002085 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 6313310871416 , q = 149386597170888 , r = 245031532711420
+Calculamos el valor de s = (r - p - q) > s = 89331624669116
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 42048590458295818315761115000
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 208406232590642 y B: 22406379785673 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  208406232590642 y  22406379785673 los dividimos en > aL: 7760178 aR: 12421979 bL: 5164489 bR: 1335524
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 7760178 * 5164489 ; q = aR * bR > q = 12421979 * 1335524 ; r = (aL + aR) * (bL + bR) > r = (7760178 + 12421979) * (5164489 + 1335524)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 7760178 y B: 5164489 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 12421979 y B: 1335524 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 20182157 y B: 6500013 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 40077353919042 , q = 16589851081996 , r = 131184282868041
+Calculamos el valor de s = (r - p - q) > s = 74517077867003
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 4669629197127226483505472066
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 367887902655814 y B: 286064206049423 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  367887902655814 y  286064206049423 los dividimos en > aL: 29443398 aR: 10963913 bL: 23228559 bR: 8525377
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 29443398 * 23228559 ; q = aR * bR > q = 10963913 * 8525377 ; r = (aL + aR) * (bL + bR) > r = (29443398 + 10963913) * (23228559 + 8525377)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 29443398 y B: 23228559 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 10963913 y B: 8525377 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 40407311 y B: 31753936 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 683927707603482 , q = 93471491720201 , r = 1283091167426096
+Calculamos el valor de s = (r - p - q) > s = 505691968102413
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 105239560788422847006642295322
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 42048590458295818315761115000 , q = 4669629197127226483505472066 , r = 105239560788422847006642295322
+Calculamos el valor de s = (r - p - q) > s = 58521341132999802207375708256
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 369966140911366072607099948703910919082943720835082805112
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 21055413936276390069497161123583644812713426800721527458 , q = 149507682140720431583720118165687976631722088455596355140 , r = 369966140911366072607099948703910919082943720835082805112
+Calculamos el valor de s = (r - p - q) > s = 199403044834369250953882669414639297638508205578764922514
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 938474931019156479973610540784033404943959068351060905717965237531834140106804524221999911074775083692252151677602
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 753289460168886942214223778 y B: 2093742589599217908792876624328585356980785335263630717990 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 191 pueden multiplicarse mediante 3 multiplicaciones de tamaño 96
+Los numeros  753289460168886942214223778 y  2093742589599217908792876624328585356980785335263630717990 los dividimos en > aL: 753289460168886942214223778 aR: 0 bL: 24064297477170413853852038182 bR: 26426746792496391305876913928
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 753289460168886942214223778 * 24064297477170413853852038182 ; q = aR * bR > q = 0 * 26426746792496391305876913928 ; r = (aL + aR) * (bL + bR) > r = (753289460168886942214223778 + 0) * (24064297477170413853852038182 + 26426746792496391305876913928)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 753289460168886942214223778 y B: 24064297477170413853852038182 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  753289460168886942214223778 y  24064297477170413853852038182 los dividimos en > aL: 70296286623650 aR: 2676221769238 bL: 201122389947430 bR: 85493558817867
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 70296286623650 * 201122389947430 ; q = aR * bR > q = 2676221769238 * 85493558817867 ; r = (aL + aR) * (bL + bR) > r = (70296286623650 + 2676221769238) * (201122389947430 + 85493558817867)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 70296286623650 y B: 201122389947430 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  70296286623650 y  201122389947430 los dividimos en > aL: 3241890 aR: 4189985 bL: 10220582 bR: 11987828
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 3241890 * 10220582 ; q = aR * bR > q = 4189985 * 11987828 ; r = (aL + aR) * (bL + bR) > r = (3241890 + 4189985) * (10220582 + 11987828)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 3241890 y B: 10220582 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 4189985 y B: 11987828 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 7431875 y B: 22208410 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 33134002579980 , q = 50228819502580 , r = 165050127068750
+Calculamos el valor de s = (r - p - q) > s = 81687304986190
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 14138157170178042735694719500
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2676221769238 y B: 85493558817867 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  2676221769238 y  85493558817867 los dividimos en > aL: 4158998 aR: 159515 bL: 3421259 bR: 5095813
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 4158998 * 3421259 ; q = aR * bR > q = 159515 * 5095813 ; r = (aL + aR) * (bL + bR) > r = (4158998 + 159515) * (3421259 + 5095813)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 4158998 y B: 3421259 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 159515 y B: 5095813 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 4318513 y B: 8517072 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 14229009338482 , q = 812858610695 , r = 36781086153936
+Calculamos el valor de s = (r - p - q) > s = 21739218204759
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 228799723238005038545375346
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 72972508392888 y B: 286615948765297 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  72972508392888 y  286615948765297 los dividimos en > aL: 7400888 aR: 2174750 bL: 30419057 bR: 8541820
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 7400888 * 30419057 ; q = aR * bR > q = 2174750 * 8541820 ; r = (aL + aR) * (bL + bR) > r = (7400888 + 2174750) * (30419057 + 8541820)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 7400888 y B: 30419057 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2174750 y B: 8541820 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 9575638 y B: 38960877 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 225128033922616 , q = 18576323045000 , r = 373075254314526
+Calculamos el valor de s = (r - p - q) > s = 129370897346910
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 20915084726811192333376007736
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 14138157170178042735694719500 , q = 228799723238005038545375346 , r = 20915084726811192333376007736
+Calculamos el valor de s = (r - p - q) > s = 6548127833395144559135912890
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 18127381655921208997397491491144982174620942916348291596
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 0 y B: 26426746792496391305876913928 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  0 y  26426746792496391305876913928 los dividimos en > aL: 0 aR: 0 bL: 54191045394184 bR: 93886664815899
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 0 * 54191045394184 ; q = aR * bR > q = 0 * 93886664815899 ; r = (aL + aR) * (bL + bR) > r = (0 + 0) * (54191045394184 + 93886664815899)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 0 y B: 54191045394184 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 0 y B: 93886664815899 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 0 y B: 148077710210083 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 0 , q = 0 , r = 0
+Calculamos el valor de s = (r - p - q) > s = 0
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 0
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 753289460168886942214223778 y B: 50491044269666805159728952110 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 96 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  753289460168886942214223778 y  50491044269666805159728952110 los dividimos en > aL: 70296286623650 aR: 2676221769238 bL: 255313435341614 bR: 179380223633766
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 70296286623650 * 255313435341614 ; q = aR * bR > q = 2676221769238 * 179380223633766 ; r = (aL + aR) * (bL + bR) > r = (70296286623650 + 2676221769238) * (255313435341614 + 179380223633766)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 70296286623650 y B: 255313435341614 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  70296286623650 y  255313435341614 los dividimos en > aL: 3241890 aR: 4189985 bL: 10400558 bR: 15217866
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 3241890 * 10400558 ; q = aR * bR > q = 4189985 * 15217866 ; r = (aL + aR) * (bL + bR) > r = (3241890 + 4189985) * (10400558 + 15217866)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 3241890 y B: 10400558 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 4189985 y B: 15217866 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 7431875 y B: 25618424 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 33717464974620 , q = 63762630272010 , r = 190392924865000
+Calculamos el valor de s = (r - p - q) > s = 92912829618370
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 17947586429642829396401571100
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2676221769238 y B: 179380223633766 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  2676221769238 y  179380223633766 los dividimos en > aL: 4158998 aR: 159515 bL: 8546662 bR: 10691894
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 4158998 * 8546662 ; q = aR * bR > q = 159515 * 10691894 ; r = (aL + aR) * (bL + bR) > r = (4158998 + 159515) * (8546662 + 10691894)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 4158998 y B: 8546662 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 159515 y B: 10691894 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 4318513 y B: 19238556 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 35545550164676 , q = 1705517471410 , r = 83081954187228
+Calculamos el valor de s = (r - p - q) > s = 45830886551142
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 480061259459465345876890308
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 72972508392888 y B: 434693658975380 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  72972508392888 y  434693658975380 los dividimos en > aL: 7400888 aR: 2174750 bL: 18947220 bR: 12954880
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 7400888 * 18947220 ; q = aR * bR > q = 2174750 * 12954880 ; r = (aL + aR) * (bL + bR) > r = (7400888 + 2174750) * (18947220 + 12954880)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 7400888 y B: 18947220 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2174750 y B: 12954880 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 9575638 y B: 31902100 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 140226253131360 , q = 28173625280000 , r = 305482961039800
+Calculamos el valor de s = (r - p - q) > s = 137083082628440
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 31720686677916111140559097440
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 17947586429642829396401571100 , q = 480061259459465345876890308 , r = 31720686677916111140559097440
+Calculamos el valor de s = (r - p - q) > s = 13293038988813816398280636032
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 38034371481260680114604468422257478673229377196985271580
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 18127381655921208997397491491144982174620942916348291596 , q = 0 , r = 38034371481260680114604468422257478673229377196985271580
+Calculamos el valor de s = (r - p - q) > s = 19906989825339471117206976931112496498608434280636979984
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 1577194225051802258678017650098214736856970049654678797793121249105767084984670366220
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2095297311866543542424286731493596903787533810181627030127 y B: 2541638420756057130167648324266404236202979535603660772688 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 191 pueden multiplicarse mediante 3 multiplicaciones de tamaño 96
+Los numeros  2095297311866543542424286731493596903787533810181627030127 y  2541638420756057130167648324266404236202979535603660772688 los dividimos en > aL: 32968058778636453308512447087 aR: 26446370146339107517899123015 bL: 24717892532535472141196612944 bR: 32079986965474017728173834404
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 32968058778636453308512447087 * 24717892532535472141196612944 ; q = aR * bR > q = 26446370146339107517899123015 * 32079986965474017728173834404 ; r = (aL + aR) * (bL + bR) > r = (32968058778636453308512447087 + 26446370146339107517899123015) * (24717892532535472141196612944 + 32079986965474017728173834404)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 32968058778636453308512447087 y B: 24717892532535472141196612944 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  32968058778636453308512447087 y  24717892532535472141196612944 los dividimos en > aL: 186772695394927 aR: 117126073386360 bL: 148573814805840 bR: 87815594911459
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 186772695394927 * 148573814805840 ; q = aR * bR > q = 117126073386360 * 87815594911459 ; r = (aL + aR) * (bL + bR) > r = (186772695394927 + 117126073386360) * (148573814805840 + 87815594911459)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 186772695394927 y B: 148573814805840 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  186772695394927 y  148573814805840 los dividimos en > aL: 2730607 aR: 11132520 bL: 7624016 bR: 8855689
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 2730607 * 7624016 ; q = aR * bR > q = 11132520 * 8855689 ; r = (aL + aR) * (bL + bR) > r = (2730607 + 11132520) * (7624016 + 8855689)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2730607 y B: 7624016 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 11132520 y B: 8855689 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 13863127 y B: 16479705 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 20818191457712 , q = 98586134906280 , r = 228460243337535
+Calculamos el valor de s = (r - p - q) > s = 109055916973543
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 27749531856393449498625973680
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 117126073386360 y B: 87815594911459 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  117126073386360 y  87815594911459 los dividimos en > aL: 16745848 aR: 6981257 bL: 5711587 bR: 5234217
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 16745848 * 5711587 ; q = aR * bR > q = 6981257 * 5234217 ; r = (aL + aR) * (bL + bR) > r = (16745848 + 6981257) * (5711587 + 5234217)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 16745848 y B: 5711587 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 6981257 y B: 5234217 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 23727105 y B: 10945804 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 95645367740776 , q = 36541414070769 , r = 259712240817420
+Calculamos el valor de s = (r - p - q) > s = 127525459005875
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 10285495814066408620498299240
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 303898768781287 y B: 236389409717299 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  303898768781287 y  236389409717299 los dividimos en > aL: 2699239 aR: 9056889 bL: 13335603 bR: 7044953
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 2699239 * 13335603 ; q = aR * bR > q = 9056889 * 7044953 ; r = (aL + aR) * (bL + bR) > r = (2699239 + 9056889) * (13335603 + 7044953)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2699239 y B: 13335603 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 9056889 y B: 7044953 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 11756128 y B: 20380556 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 35995979706117 , q = 63805357331217 , r = 239596425047168
+Calculamos el valor de s = (r - p - q) > s = 139795088009834
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 71838450566022367137431383813
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 27749531856393449498625973680 , q = 10285495814066408620498299240 , r = 71838450566022367137431383813
+Calculamos el valor de s = (r - p - q) > s = 33803422895562509018307110893
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 814900933896648507402738761688990905241530275749419294128
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 26446370146339107517899123015 y B: 32079986965474017728173834404 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  26446370146339107517899123015 y  32079986965474017728173834404 los dividimos en > aL: 43005261293895 aR: 93956380973520 bL: 88922470088868 bR: 113971008507981
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 43005261293895 * 88922470088868 ; q = aR * bR > q = 93956380973520 * 113971008507981 ; r = (aL + aR) * (bL + bR) > r = (43005261293895 + 93956380973520) * (88922470088868 + 113971008507981)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 43005261293895 y B: 88922470088868 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  43005261293895 y  88922470088868 los dividimos en > aL: 5417287 aR: 2563313 bL: 4063396 bR: 5300192
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 5417287 * 4063396 ; q = aR * bR > q = 2563313 * 5300192 ; r = (aL + aR) * (bL + bR) > r = (5417287 + 2563313) * (4063396 + 5300192)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 5417287 y B: 4063396 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 2563313 y B: 5300192 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 7980600 y B: 9363588 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 22012582326652 , q = 13586051056096 , r = 74727050392800
+Calculamos el valor de s = (r - p - q) > s = 39128417010052
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 3824134061070330881315860860
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 93956380973520 y B: 113971008507981 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  93956380973520 y  113971008507981 los dividimos en > aL: 11950544 aR: 5600236 bL: 7999565 bR: 6793201
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 11950544 * 7999565 ; q = aR * bR > q = 5600236 * 6793201 ; r = (aL + aR) * (bL + bR) > r = (11950544 + 5600236) * (7999565 + 6793201)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 11950544 y B: 7999565 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 5600236 y B: 6793201 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 17550780 y B: 14792766 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 95599153513360 , q = 38043528795436 , r = 259624581657480
+Calculamos el valor de s = (r - p - q) > s = 125981899348684
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 10708303495312152071469663120
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 136961642267415 y B: 202893478596849 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  136961642267415 y  202893478596849 los dividimos en > aL: 590615 aR: 8163550 bL: 12062961 bR: 12093393
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 590615 * 12062961 ; q = aR * bR > q = 8163550 * 12093393 ; r = (aL + aR) * (bL + bR) > r = (590615 + 8163550) * (12062961 + 12093393)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 590615 y B: 12062961 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 8163550 y B: 12093393 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 8754165 y B: 24156354 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 7124565711015 , q = 98725018425150 , r = 211468708714410
+Calculamos el valor de s = (r - p - q) > s = 105619124578245
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 27788624033973054645034375335
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 3824134061070330881315860860 , q = 10708303495312152071469663120 , r = 27788624033973054645034375335
+Calculamos el valor de s = (r - p - q) > s = 13256186477590571692248851355
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 848399209578659759939149350761666012637028723301435208060
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 59414428924975560826411570102 y B: 56797879498009489869370447348 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 96 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  59414428924975560826411570102 y  56797879498009489869370447348 los dividimos en > aL: 229777956688822 aR: 211082454359880 bL: 237496284894708 bR: 201786603419440
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 229777956688822 * 237496284894708 ; q = aR * bR > q = 211082454359880 * 201786603419440 ; r = (aL + aR) * (bL + bR) > r = (229777956688822 + 211082454359880) * (237496284894708 + 201786603419440)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 229777956688822 y B: 237496284894708 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  229777956688822 y  237496284894708 los dividimos en > aL: 8147894 aR: 13695833 bL: 11687412 bR: 14155881
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 8147894 * 11687412 ; q = aR * bR > q = 13695833 * 14155881 ; r = (aL + aR) * (bL + bR) > r = (8147894 + 13695833) * (11687412 + 14155881)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 8147894 y B: 11687412 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 13695833 y B: 14155881 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 21843727 y B: 25843293 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 95227794110328 , q = 193876582143873 , r = 564513837073011
+Calculamos el valor de s = (r - p - q) > s = 275409460818810
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 54571411064292345410590553976
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 211082454359880 y B: 201786603419440 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  211082454359880 y  201786603419440 los dividimos en > aL: 11919176 aR: 12581494 bL: 13711152 bR: 12027418
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 11919176 * 13711152 ; q = aR * bR > q = 12581494 * 12027418 ; r = (aL + aR) * (bL + bR) > r = (11919176 + 12581494) * (13711152 + 12027418)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 11919176 y B: 13711152 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 12581494 y B: 12027418 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 24500670 y B: 25738570 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 163425633850752 , q = 151322887402492 , r = 630612209841900
+Calculamos el valor de s = (r - p - q) > s = 315863688588656
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 42593611506719149344348067200
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 440860411048702 y B: 439282888314148 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  440860411048702 y  439282888314148 los dividimos en > aL: 3289854 aR: 13138664 bL: 8621348 bR: 13091650
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 3289854 * 8621348 ; q = aR * bR > q = 13138664 * 13091650 ; r = (aL + aR) * (bL + bR) > r = (3289854 + 13138664) * (8621348 + 13091650)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 3289854 y B: 8621348 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 13138664 y B: 13091650 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Los numeros A: 16428518 y B: 21712998 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 28362976203192 , q = 172006790555600 , r = 356712378476964
+Calculamos el valor de s = (r - p - q) > s = 156342611718172
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 193662434708836339621503635896
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 54571411064292345410590553976 , q = 42593611506719149344348067200 , r = 193662434708836339621503635896
+Calculamos el valor de s = (r - p - q) > s = 96497412137824844866565014720
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 3374613574523811421582711400935011433809309151138801989496
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 814900933896648507402738761688990905241530275749419294128 , q = 848399209578659759939149350761666012637028723301435208060 , r = 3374613574523811421582711400935011433809309151138801989496
+Calculamos el valor de s = (r - p - q) > s = 1711313431048503154240823288484354515930750152087947487308
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 5325488150746893452486274034740016759715986246585984396976205987704892305808418470198164391726775145572491474771376
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 938474931019156479973610540784033404943959068351060905717965237531834140106804524221999911074775083692252151677602 , q = 1577194225051802258678017650098214736856970049654678797793121249105767084984670366220 , r = 5325488150746893452486274034740016759715986246585984396976205987704892305808418470198164391726775145572491474771376
+Calculamos el valor de s = (r - p - q) > s = 4387013219727736972512663493954406160546975375976245473608142535436201195651959267178371359402894294795254652727554
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 62144616628408701352907532294392454200678186409076582569248091917428034055657239700154822244646944932206087383650472199908808429608671453280623294504596920333030087635854343636011349681635531221369506
+MULTIPLICANDO A = 4728474577674616161839303495756453524262737373736272827367382726364784585746383647437
+MULTIPLICANDO B = 13142635242626253673748586970695656453524123131425364758696968574634535423535475869457362618191726363727252424253738
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 4728474577674616161839303495756453524262737373736272827367382726364784585746383647437
+Número B: 13142635242626253673748586970695656453524123131425364758696968574634535423535475869457362618191726363727252424253738
+Los numeros A: 4728474577674616161839303495756453524262737373736272827367382726364784585746383647437 y B: 13142635242626253673748586970695656453524123131425364758696968574634535423535475869457362618191726363727252424253738 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 383 pueden multiplicarse mediante 3 multiplicaciones de tamaño 192
+Los numeros  4728474577674616161839303495756453524262737373736272827367382726364784585746383647437 y  13142635242626253673748586970695656453524123131425364758696968574634535423535475869457362618191726363727252424253738 los dividimos en > aL: 2095297311866543542424286731492843614327364923239412806349 aR: 753289460168886942214223778 bL: 447895831156839221374771699937818879222194200340030054698 bR: 2093742589599217908792876624328585356980785335263630717990
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 2095297311866543542424286731492843614327364923239412806349 * 447895831156839221374771699937818879222194200340030054698 ; q = aR * bR > q = 753289460168886942214223778 * 2093742589599217908792876624328585356980785335263630717990 ; r = (aL + aR) * (bL + bR) > r = (2095297311866543542424286731492843614327364923239412806349 + 753289460168886942214223778) * (447895831156839221374771699937818879222194200340030054698 + 2093742589599217908792876624328585356980785335263630717990)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2095297311866543542424286731492843614327364923239412806349
+Número B: 447895831156839221374771699937818879222194200340030054698
+Los numeros A: 2095297311866543542424286731492843614327364923239412806349 y B: 447895831156839221374771699937818879222194200340030054698 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 191 pueden multiplicarse mediante 3 multiplicaciones de tamaño 96
+Los numeros  2095297311866543542424286731492843614327364923239412806349 y  447895831156839221374771699937818879222194200340030054698 los dividimos en > aL: 32214769318467566366298223309 aR: 26446370146339107517899123015 bL: 653595055365058287344574762 bR: 5653240172977626422296920476
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 32214769318467566366298223309 * 653595055365058287344574762 ; q = aR * bR > q = 26446370146339107517899123015 * 5653240172977626422296920476 ; r = (aL + aR) * (bL + bR) > r = (32214769318467566366298223309 + 26446370146339107517899123015) * (653595055365058287344574762 + 5653240172977626422296920476)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 32214769318467566366298223309
+Número B: 653595055365058287344574762
+Los numeros A: 32214769318467566366298223309 y B: 653595055365058287344574762 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  32214769318467566366298223309 y  653595055365058287344574762 los dividimos en > aL: 116476408771277 aR: 114449851617122 bL: 228926401569066 bR: 2322036093591
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 116476408771277 * 228926401569066 ; q = aR * bR > q = 114449851617122 * 2322036093591 ; r = (aL + aR) * (bL + bR) > r = (116476408771277 + 114449851617122) * (228926401569066 + 2322036093591)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 116476408771277
+Número B: 228926401569066
+Los numeros A: 116476408771277 y B: 228926401569066 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  116476408771277 y  228926401569066 los dividimos en > aL: 16265933 aR: 6942534 bL: 14180650 bR: 13645076
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 16265933 * 14180650 ; q = aR * bR > q = 6942534 * 13645076 ; r = (aL + aR) * (bL + bR) > r = (16265933 + 6942534) * (14180650 + 13645076)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 16265933
+Número B: 14180650
+Los numeros A: 16265933 y B: 14180650 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 6942534
+Número B: 13645076
+Los numeros A: 6942534 y B: 13645076 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 23208467
+Número B: 27825726
+Los numeros A: 23208467 y B: 27825726 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 230661502796450 , q = 94731404062584 , r = 645792443622042
+Calculamos el valor de s = (r - p - q) > s = 320399536763008
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 26664525127696039817912517282
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 114449851617122
+Número B: 2322036093591
+Los numeros A: 114449851617122 y B: 2322036093591 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  114449851617122 y  2322036093591 los dividimos en > aL: 12586850 aR: 6821742 bL: 2290327 bR: 138404
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 12586850 * 2290327 ; q = aR * bR > q = 6821742 * 138404 ; r = (aL + aR) * (bL + bR) > r = (12586850 + 6821742) * (2290327 + 138404)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 12586850
+Número B: 2290327
+Los numeros A: 12586850 y B: 2290327 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 6821742
+Número B: 138404
+Los numeros A: 6821742 y B: 138404 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 19408592
+Número B: 2428731
+Los numeros A: 19408592 y B: 2428731 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 28828002399950 , q = 944156379768 , r = 47138249056752
+Calculamos el valor de s = (r - p - q) > s = 17366090277034
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 265756686361091563090065102
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 230926260388399
+Número B: 231248437662657
+Los numeros A: 230926260388399 y B: 231248437662657 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  230926260388399 y  231248437662657 los dividimos en > aL: 12075567 aR: 13764277 bL: 16470977 bR: 13783480
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 12075567 * 16470977 ; q = aR * bR > q = 13764277 * 13783480 ; r = (aL + aR) * (bL + bR) > r = (12075567 + 13764277) * (16470977 + 13783480)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 12075567
+Número B: 16470977
+Los numeros A: 12075567 y B: 16470977 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 13764277
+Número B: 13783480
+Los numeros A: 13764277 y B: 13783480 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 25839844
+Número B: 30254457
+Los numeros A: 25839844 y B: 30254457 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 198896386318959 , q = 189719636743960 , r = 781770449184708
+Calculamos el valor de s = (r - p - q) > s = 393154426121789
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 53401336930097184612558316143
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 26664525127696039817912517282 , q = 265756686361091563090065102 , r = 53401336930097184612558316143
+Calculamos el valor de s = (r - p - q) > s = 26471055116040053231555733759
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 21055413936276390069497161123583644812713426800721527458
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 26446370146339107517899123015
+Número B: 5653240172977626422296920476
+Los numeros A: 26446370146339107517899123015 y B: 5653240172977626422296920476 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  26446370146339107517899123015 y  5653240172977626422296920476 los dividimos en > aL: 43005261293895 aR: 93956380973520 bL: 34731424694684 bR: 20084343692082
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 43005261293895 * 34731424694684 ; q = aR * bR > q = 93956380973520 * 20084343692082 ; r = (aL + aR) * (bL + bR) > r = (43005261293895 + 93956380973520) * (34731424694684 + 20084343692082)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 43005261293895
+Número B: 34731424694684
+Los numeros A: 43005261293895 y B: 34731424694684 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 46 pueden multiplicarse mediante 3 multiplicaciones de tamaño 23
+Los numeros  43005261293895 y  34731424694684 los dividimos en > aL: 5417287 aR: 5126626 bL: 3883420 bR: 4140308
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 5417287 * 3883420 ; q = aR * bR > q = 5126626 * 4140308 ; r = (aL + aR) * (bL + bR) > r = (5417287 + 5126626) * (3883420 + 4140308)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 5417287
+Número B: 3883420
+Los numeros A: 5417287 y B: 3883420 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 5126626
+Número B: 4140308
+Los numeros A: 5126626 y B: 4140308 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 10543913
+Número B: 8023728
+Los numeros A: 10543913 y B: 8023728 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 21037600681540 , q = 21225810640808 , r = 84601489967664
+Calculamos el valor de s = (r - p - q) > s = 42338078645316
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 1493633994104122793168154180
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 93956380973520
+Número B: 20084343692082
+Los numeros A: 93956380973520 y B: 20084343692082 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  93956380973520 y  20084343692082 los dividimos en > aL: 11950544 aR: 5600236 bL: 2874162 bR: 1197120
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 11950544 * 2874162 ; q = aR * bR > q = 5600236 * 1197120 ; r = (aL + aR) * (bL + bR) > r = (11950544 + 5600236) * (2874162 + 1197120)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 11950544
+Número B: 2874162
+Los numeros A: 11950544 y B: 2874162 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 5600236
+Número B: 1197120
+Los numeros A: 5600236 y B: 1197120 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 17550780
+Número B: 4071282
+Los numeros A: 17550780 y B: 4071282 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 34347799444128 , q = 6704154520320 , r = 71454174699960
+Calculamos el valor de s = (r - p - q) > s = 30402220735512
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 1887052247536369654275668640
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 136961642267415
+Número B: 54815768386766
+Los numeros A: 136961642267415 y B: 54815768386766 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  136961642267415 y  54815768386766 los dividimos en > aL: 590615 aR: 8163550 bL: 6757582 bR: 3267274
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 590615 * 6757582 ; q = aR * bR > q = 8163550 * 3267274 ; r = (aL + aR) * (bL + bR) > r = (590615 + 8163550) * (6757582 + 3267274)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 590615
+Número B: 6757582
+Los numeros A: 590615 y B: 6757582 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 8163550
+Número B: 3267274
+Los numeros A: 8163550 y B: 3267274 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 8754165
+Número B: 10024856
+Los numeros A: 8754165 y B: 10024856 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 3991129292930 , q = 26672554662700 , r = 87759243525240
+Calculamos el valor de s = (r - p - q) > s = 57095559569610
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 7507657660401721132919029890
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 1493633994104122793168154180 , q = 1887052247536369654275668640 , r = 7507657660401721132919029890
+Calculamos el valor de s = (r - p - q) > s = 4126971418761228685475207070
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 149507682140720431583720118165687976631722088455596355140
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 58661139464806673884197346324
+Número B: 6306835228342684709641495238
+Los numeros A: 58661139464806673884197346324 y B: 6306835228342684709641495238 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 96 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  58661139464806673884197346324 y  6306835228342684709641495238 los dividimos en > aL: 159481670065172 aR: 208406232590642 bL: 263657826263750 bR: 22406379785673
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 159481670065172 * 263657826263750 ; q = aR * bR > q = 208406232590642 * 22406379785673 ; r = (aL + aR) * (bL + bR) > r = (159481670065172 + 208406232590642) * (263657826263750 + 22406379785673)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 159481670065172
+Número B: 263657826263750
+Los numeros A: 159481670065172 y B: 263657826263750 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  159481670065172 y  263657826263750 los dividimos en > aL: 4906004 aR: 9505848 bL: 1286854 bR: 15715231
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 4906004 * 1286854 ; q = aR * bR > q = 9505848 * 15715231 ; r = (aL + aR) * (bL + bR) > r = (4906004 + 9505848) * (1286854 + 15715231)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 4906004
+Número B: 1286854
+Los numeros A: 4906004 y B: 1286854 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 9505848
+Número B: 15715231
+Los numeros A: 9505848 y B: 15715231 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 14411852
+Número B: 17002085
+Los numeros A: 14411852 y B: 17002085 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 6313310871416 , q = 149386597170888 , r = 245031532711420
+Calculamos el valor de s = (r - p - q) > s = 89331624669116
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 42048590458295818315761115000
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 208406232590642
+Número B: 22406379785673
+Los numeros A: 208406232590642 y B: 22406379785673 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  208406232590642 y  22406379785673 los dividimos en > aL: 7760178 aR: 12421979 bL: 5164489 bR: 1335524
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 7760178 * 5164489 ; q = aR * bR > q = 12421979 * 1335524 ; r = (aL + aR) * (bL + bR) > r = (7760178 + 12421979) * (5164489 + 1335524)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 7760178
+Número B: 5164489
+Los numeros A: 7760178 y B: 5164489 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 12421979
+Número B: 1335524
+Los numeros A: 12421979 y B: 1335524 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 20182157
+Número B: 6500013
+Los numeros A: 20182157 y B: 6500013 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 40077353919042 , q = 16589851081996 , r = 131184282868041
+Calculamos el valor de s = (r - p - q) > s = 74517077867003
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 4669629197127226483505472066
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 367887902655814
+Número B: 286064206049423
+Los numeros A: 367887902655814 y B: 286064206049423 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  367887902655814 y  286064206049423 los dividimos en > aL: 29443398 aR: 10963913 bL: 23228559 bR: 8525377
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 29443398 * 23228559 ; q = aR * bR > q = 10963913 * 8525377 ; r = (aL + aR) * (bL + bR) > r = (29443398 + 10963913) * (23228559 + 8525377)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 29443398
+Número B: 23228559
+Los numeros A: 29443398 y B: 23228559 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 10963913
+Número B: 8525377
+Los numeros A: 10963913 y B: 8525377 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 40407311
+Número B: 31753936
+Los numeros A: 40407311 y B: 31753936 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 683927707603482 , q = 93471491720201 , r = 1283091167426096
+Calculamos el valor de s = (r - p - q) > s = 505691968102413
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 105239560788422847006642295322
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 42048590458295818315761115000 , q = 4669629197127226483505472066 , r = 105239560788422847006642295322
+Calculamos el valor de s = (r - p - q) > s = 58521341132999802207375708256
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 369966140911366072607099948703910919082943720835082805112
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 21055413936276390069497161123583644812713426800721527458 , q = 149507682140720431583720118165687976631722088455596355140 , r = 369966140911366072607099948703910919082943720835082805112
+Calculamos el valor de s = (r - p - q) > s = 199403044834369250953882669414639297638508205578764922514
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 938474931019156479973610540784033404943959068351060905717965237531834140106804524221999911074775083692252151677602
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 753289460168886942214223778
+Número B: 2093742589599217908792876624328585356980785335263630717990
+Los numeros A: 753289460168886942214223778 y B: 2093742589599217908792876624328585356980785335263630717990 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 191 pueden multiplicarse mediante 3 multiplicaciones de tamaño 96
+Los numeros  753289460168886942214223778 y  2093742589599217908792876624328585356980785335263630717990 los dividimos en > aL: 753289460168886942214223778 aR: 0 bL: 24064297477170413853852038182 bR: 26426746792496391305876913928
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 753289460168886942214223778 * 24064297477170413853852038182 ; q = aR * bR > q = 0 * 26426746792496391305876913928 ; r = (aL + aR) * (bL + bR) > r = (753289460168886942214223778 + 0) * (24064297477170413853852038182 + 26426746792496391305876913928)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 753289460168886942214223778
+Número B: 24064297477170413853852038182
+Los numeros A: 753289460168886942214223778 y B: 24064297477170413853852038182 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  753289460168886942214223778 y  24064297477170413853852038182 los dividimos en > aL: 70296286623650 aR: 2676221769238 bL: 201122389947430 bR: 85493558817867
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 70296286623650 * 201122389947430 ; q = aR * bR > q = 2676221769238 * 85493558817867 ; r = (aL + aR) * (bL + bR) > r = (70296286623650 + 2676221769238) * (201122389947430 + 85493558817867)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 70296286623650
+Número B: 201122389947430
+Los numeros A: 70296286623650 y B: 201122389947430 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  70296286623650 y  201122389947430 los dividimos en > aL: 3241890 aR: 4189985 bL: 10220582 bR: 11987828
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 3241890 * 10220582 ; q = aR * bR > q = 4189985 * 11987828 ; r = (aL + aR) * (bL + bR) > r = (3241890 + 4189985) * (10220582 + 11987828)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 3241890
+Número B: 10220582
+Los numeros A: 3241890 y B: 10220582 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 4189985
+Número B: 11987828
+Los numeros A: 4189985 y B: 11987828 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 7431875
+Número B: 22208410
+Los numeros A: 7431875 y B: 22208410 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 33134002579980 , q = 50228819502580 , r = 165050127068750
+Calculamos el valor de s = (r - p - q) > s = 81687304986190
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 14138157170178042735694719500
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2676221769238
+Número B: 85493558817867
+Los numeros A: 2676221769238 y B: 85493558817867 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  2676221769238 y  85493558817867 los dividimos en > aL: 4158998 aR: 159515 bL: 3421259 bR: 5095813
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 4158998 * 3421259 ; q = aR * bR > q = 159515 * 5095813 ; r = (aL + aR) * (bL + bR) > r = (4158998 + 159515) * (3421259 + 5095813)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 4158998
+Número B: 3421259
+Los numeros A: 4158998 y B: 3421259 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 159515
+Número B: 5095813
+Los numeros A: 159515 y B: 5095813 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 4318513
+Número B: 8517072
+Los numeros A: 4318513 y B: 8517072 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 14229009338482 , q = 812858610695 , r = 36781086153936
+Calculamos el valor de s = (r - p - q) > s = 21739218204759
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 228799723238005038545375346
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 72972508392888
+Número B: 286615948765297
+Los numeros A: 72972508392888 y B: 286615948765297 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  72972508392888 y  286615948765297 los dividimos en > aL: 7400888 aR: 2174750 bL: 30419057 bR: 8541820
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 7400888 * 30419057 ; q = aR * bR > q = 2174750 * 8541820 ; r = (aL + aR) * (bL + bR) > r = (7400888 + 2174750) * (30419057 + 8541820)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 7400888
+Número B: 30419057
+Los numeros A: 7400888 y B: 30419057 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2174750
+Número B: 8541820
+Los numeros A: 2174750 y B: 8541820 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 9575638
+Número B: 38960877
+Los numeros A: 9575638 y B: 38960877 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 225128033922616 , q = 18576323045000 , r = 373075254314526
+Calculamos el valor de s = (r - p - q) > s = 129370897346910
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 20915084726811192333376007736
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 14138157170178042735694719500 , q = 228799723238005038545375346 , r = 20915084726811192333376007736
+Calculamos el valor de s = (r - p - q) > s = 6548127833395144559135912890
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 18127381655921208997397491491144982174620942916348291596
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 0
+Número B: 26426746792496391305876913928
+Los numeros A: 0 y B: 26426746792496391305876913928 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  0 y  26426746792496391305876913928 los dividimos en > aL: 0 aR: 0 bL: 54191045394184 bR: 93886664815899
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 0 * 54191045394184 ; q = aR * bR > q = 0 * 93886664815899 ; r = (aL + aR) * (bL + bR) > r = (0 + 0) * (54191045394184 + 93886664815899)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 0
+Número B: 54191045394184
+Los numeros A: 0 y B: 54191045394184 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 0
+Número B: 93886664815899
+Los numeros A: 0 y B: 93886664815899 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 0
+Número B: 148077710210083
+Los numeros A: 0 y B: 148077710210083 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 0 , q = 0 , r = 0
+Calculamos el valor de s = (r - p - q) > s = 0
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 0
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 753289460168886942214223778
+Número B: 50491044269666805159728952110
+Los numeros A: 753289460168886942214223778 y B: 50491044269666805159728952110 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 96 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  753289460168886942214223778 y  50491044269666805159728952110 los dividimos en > aL: 70296286623650 aR: 2676221769238 bL: 255313435341614 bR: 179380223633766
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 70296286623650 * 255313435341614 ; q = aR * bR > q = 2676221769238 * 179380223633766 ; r = (aL + aR) * (bL + bR) > r = (70296286623650 + 2676221769238) * (255313435341614 + 179380223633766)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 70296286623650
+Número B: 255313435341614
+Los numeros A: 70296286623650 y B: 255313435341614 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  70296286623650 y  255313435341614 los dividimos en > aL: 3241890 aR: 4189985 bL: 10400558 bR: 15217866
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 3241890 * 10400558 ; q = aR * bR > q = 4189985 * 15217866 ; r = (aL + aR) * (bL + bR) > r = (3241890 + 4189985) * (10400558 + 15217866)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 3241890
+Número B: 10400558
+Los numeros A: 3241890 y B: 10400558 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 4189985
+Número B: 15217866
+Los numeros A: 4189985 y B: 15217866 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 7431875
+Número B: 25618424
+Los numeros A: 7431875 y B: 25618424 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 33717464974620 , q = 63762630272010 , r = 190392924865000
+Calculamos el valor de s = (r - p - q) > s = 92912829618370
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 17947586429642829396401571100
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2676221769238
+Número B: 179380223633766
+Los numeros A: 2676221769238 y B: 179380223633766 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  2676221769238 y  179380223633766 los dividimos en > aL: 4158998 aR: 159515 bL: 8546662 bR: 10691894
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 4158998 * 8546662 ; q = aR * bR > q = 159515 * 10691894 ; r = (aL + aR) * (bL + bR) > r = (4158998 + 159515) * (8546662 + 10691894)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 4158998
+Número B: 8546662
+Los numeros A: 4158998 y B: 8546662 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 159515
+Número B: 10691894
+Los numeros A: 159515 y B: 10691894 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 4318513
+Número B: 19238556
+Los numeros A: 4318513 y B: 19238556 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 35545550164676 , q = 1705517471410 , r = 83081954187228
+Calculamos el valor de s = (r - p - q) > s = 45830886551142
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 480061259459465345876890308
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 72972508392888
+Número B: 434693658975380
+Los numeros A: 72972508392888 y B: 434693658975380 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  72972508392888 y  434693658975380 los dividimos en > aL: 7400888 aR: 2174750 bL: 18947220 bR: 12954880
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 7400888 * 18947220 ; q = aR * bR > q = 2174750 * 12954880 ; r = (aL + aR) * (bL + bR) > r = (7400888 + 2174750) * (18947220 + 12954880)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 7400888
+Número B: 18947220
+Los numeros A: 7400888 y B: 18947220 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2174750
+Número B: 12954880
+Los numeros A: 2174750 y B: 12954880 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 9575638
+Número B: 31902100
+Los numeros A: 9575638 y B: 31902100 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 140226253131360 , q = 28173625280000 , r = 305482961039800
+Calculamos el valor de s = (r - p - q) > s = 137083082628440
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 31720686677916111140559097440
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 17947586429642829396401571100 , q = 480061259459465345876890308 , r = 31720686677916111140559097440
+Calculamos el valor de s = (r - p - q) > s = 13293038988813816398280636032
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 38034371481260680114604468422257478673229377196985271580
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 18127381655921208997397491491144982174620942916348291596 , q = 0 , r = 38034371481260680114604468422257478673229377196985271580
+Calculamos el valor de s = (r - p - q) > s = 19906989825339471117206976931112496498608434280636979984
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 1577194225051802258678017650098214736856970049654678797793121249105767084984670366220
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2095297311866543542424286731493596903787533810181627030127
+Número B: 2541638420756057130167648324266404236202979535603660772688
+Los numeros A: 2095297311866543542424286731493596903787533810181627030127 y B: 2541638420756057130167648324266404236202979535603660772688 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 191 pueden multiplicarse mediante 3 multiplicaciones de tamaño 96
+Los numeros  2095297311866543542424286731493596903787533810181627030127 y  2541638420756057130167648324266404236202979535603660772688 los dividimos en > aL: 32968058778636453308512447087 aR: 26446370146339107517899123015 bL: 24717892532535472141196612944 bR: 32079986965474017728173834404
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 32968058778636453308512447087 * 24717892532535472141196612944 ; q = aR * bR > q = 26446370146339107517899123015 * 32079986965474017728173834404 ; r = (aL + aR) * (bL + bR) > r = (32968058778636453308512447087 + 26446370146339107517899123015) * (24717892532535472141196612944 + 32079986965474017728173834404)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 32968058778636453308512447087
+Número B: 24717892532535472141196612944
+Los numeros A: 32968058778636453308512447087 y B: 24717892532535472141196612944 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  32968058778636453308512447087 y  24717892532535472141196612944 los dividimos en > aL: 186772695394927 aR: 117126073386360 bL: 148573814805840 bR: 87815594911459
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 186772695394927 * 148573814805840 ; q = aR * bR > q = 117126073386360 * 87815594911459 ; r = (aL + aR) * (bL + bR) > r = (186772695394927 + 117126073386360) * (148573814805840 + 87815594911459)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 186772695394927
+Número B: 148573814805840
+Los numeros A: 186772695394927 y B: 148573814805840 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  186772695394927 y  148573814805840 los dividimos en > aL: 2730607 aR: 11132520 bL: 7624016 bR: 8855689
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 2730607 * 7624016 ; q = aR * bR > q = 11132520 * 8855689 ; r = (aL + aR) * (bL + bR) > r = (2730607 + 11132520) * (7624016 + 8855689)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2730607
+Número B: 7624016
+Los numeros A: 2730607 y B: 7624016 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 11132520
+Número B: 8855689
+Los numeros A: 11132520 y B: 8855689 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 13863127
+Número B: 16479705
+Los numeros A: 13863127 y B: 16479705 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 20818191457712 , q = 98586134906280 , r = 228460243337535
+Calculamos el valor de s = (r - p - q) > s = 109055916973543
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 27749531856393449498625973680
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 117126073386360
+Número B: 87815594911459
+Los numeros A: 117126073386360 y B: 87815594911459 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  117126073386360 y  87815594911459 los dividimos en > aL: 16745848 aR: 6981257 bL: 5711587 bR: 5234217
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 16745848 * 5711587 ; q = aR * bR > q = 6981257 * 5234217 ; r = (aL + aR) * (bL + bR) > r = (16745848 + 6981257) * (5711587 + 5234217)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 16745848
+Número B: 5711587
+Los numeros A: 16745848 y B: 5711587 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 6981257
+Número B: 5234217
+Los numeros A: 6981257 y B: 5234217 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 23727105
+Número B: 10945804
+Los numeros A: 23727105 y B: 10945804 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 95645367740776 , q = 36541414070769 , r = 259712240817420
+Calculamos el valor de s = (r - p - q) > s = 127525459005875
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 10285495814066408620498299240
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 303898768781287
+Número B: 236389409717299
+Los numeros A: 303898768781287 y B: 236389409717299 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  303898768781287 y  236389409717299 los dividimos en > aL: 2699239 aR: 9056889 bL: 13335603 bR: 7044953
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 2699239 * 13335603 ; q = aR * bR > q = 9056889 * 7044953 ; r = (aL + aR) * (bL + bR) > r = (2699239 + 9056889) * (13335603 + 7044953)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2699239
+Número B: 13335603
+Los numeros A: 2699239 y B: 13335603 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 9056889
+Número B: 7044953
+Los numeros A: 9056889 y B: 7044953 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 11756128
+Número B: 20380556
+Los numeros A: 11756128 y B: 20380556 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 35995979706117 , q = 63805357331217 , r = 239596425047168
+Calculamos el valor de s = (r - p - q) > s = 139795088009834
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 71838450566022367137431383813
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 27749531856393449498625973680 , q = 10285495814066408620498299240 , r = 71838450566022367137431383813
+Calculamos el valor de s = (r - p - q) > s = 33803422895562509018307110893
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 814900933896648507402738761688990905241530275749419294128
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 26446370146339107517899123015
+Número B: 32079986965474017728173834404
+Los numeros A: 26446370146339107517899123015 y B: 32079986965474017728173834404 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 95 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  26446370146339107517899123015 y  32079986965474017728173834404 los dividimos en > aL: 43005261293895 aR: 93956380973520 bL: 88922470088868 bR: 113971008507981
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 43005261293895 * 88922470088868 ; q = aR * bR > q = 93956380973520 * 113971008507981 ; r = (aL + aR) * (bL + bR) > r = (43005261293895 + 93956380973520) * (88922470088868 + 113971008507981)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 43005261293895
+Número B: 88922470088868
+Los numeros A: 43005261293895 y B: 88922470088868 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  43005261293895 y  88922470088868 los dividimos en > aL: 5417287 aR: 2563313 bL: 4063396 bR: 5300192
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 5417287 * 4063396 ; q = aR * bR > q = 2563313 * 5300192 ; r = (aL + aR) * (bL + bR) > r = (5417287 + 2563313) * (4063396 + 5300192)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 5417287
+Número B: 4063396
+Los numeros A: 5417287 y B: 4063396 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 2563313
+Número B: 5300192
+Los numeros A: 2563313 y B: 5300192 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 7980600
+Número B: 9363588
+Los numeros A: 7980600 y B: 9363588 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 22012582326652 , q = 13586051056096 , r = 74727050392800
+Calculamos el valor de s = (r - p - q) > s = 39128417010052
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 3824134061070330881315860860
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 93956380973520
+Número B: 113971008507981
+Los numeros A: 93956380973520 y B: 113971008507981 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 47 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  93956380973520 y  113971008507981 los dividimos en > aL: 11950544 aR: 5600236 bL: 7999565 bR: 6793201
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 11950544 * 7999565 ; q = aR * bR > q = 5600236 * 6793201 ; r = (aL + aR) * (bL + bR) > r = (11950544 + 5600236) * (7999565 + 6793201)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 11950544
+Número B: 7999565
+Los numeros A: 11950544 y B: 7999565 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 5600236
+Número B: 6793201
+Los numeros A: 5600236 y B: 6793201 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 17550780
+Número B: 14792766
+Los numeros A: 17550780 y B: 14792766 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 95599153513360 , q = 38043528795436 , r = 259624581657480
+Calculamos el valor de s = (r - p - q) > s = 125981899348684
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 10708303495312152071469663120
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 136961642267415
+Número B: 202893478596849
+Los numeros A: 136961642267415 y B: 202893478596849 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  136961642267415 y  202893478596849 los dividimos en > aL: 590615 aR: 8163550 bL: 12062961 bR: 12093393
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 590615 * 12062961 ; q = aR * bR > q = 8163550 * 12093393 ; r = (aL + aR) * (bL + bR) > r = (590615 + 8163550) * (12062961 + 12093393)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 590615
+Número B: 12062961
+Los numeros A: 590615 y B: 12062961 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 8163550
+Número B: 12093393
+Los numeros A: 8163550 y B: 12093393 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 8754165
+Número B: 24156354
+Los numeros A: 8754165 y B: 24156354 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 7124565711015 , q = 98725018425150 , r = 211468708714410
+Calculamos el valor de s = (r - p - q) > s = 105619124578245
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 27788624033973054645034375335
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 3824134061070330881315860860 , q = 10708303495312152071469663120 , r = 27788624033973054645034375335
+Calculamos el valor de s = (r - p - q) > s = 13256186477590571692248851355
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 848399209578659759939149350761666012637028723301435208060
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 59414428924975560826411570102
+Número B: 56797879498009489869370447348
+Los numeros A: 59414428924975560826411570102 y B: 56797879498009489869370447348 no son solución trivial (demasiado grandes para su representación como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 96 pueden multiplicarse mediante 3 multiplicaciones de tamaño 48
+Los numeros  59414428924975560826411570102 y  56797879498009489869370447348 los dividimos en > aL: 229777956688822 aR: 211082454359880 bL: 237496284894708 bR: 201786603419440
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 229777956688822 * 237496284894708 ; q = aR * bR > q = 211082454359880 * 201786603419440 ; r = (aL + aR) * (bL + bR) > r = (229777956688822 + 211082454359880) * (237496284894708 + 201786603419440)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 229777956688822
+Número B: 237496284894708
+Los numeros A: 229777956688822 y B: 237496284894708 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  229777956688822 y  237496284894708 los dividimos en > aL: 8147894 aR: 13695833 bL: 11687412 bR: 14155881
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 8147894 * 11687412 ; q = aR * bR > q = 13695833 * 14155881 ; r = (aL + aR) * (bL + bR) > r = (8147894 + 13695833) * (11687412 + 14155881)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 8147894
+Número B: 11687412
+Los numeros A: 8147894 y B: 11687412 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 13695833
+Número B: 14155881
+Los numeros A: 13695833 y B: 14155881 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 21843727
+Número B: 25843293
+Los numeros A: 21843727 y B: 25843293 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 95227794110328 , q = 193876582143873 , r = 564513837073011
+Calculamos el valor de s = (r - p - q) > s = 275409460818810
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 54571411064292345410590553976
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 211082454359880
+Número B: 201786603419440
+Los numeros A: 211082454359880 y B: 201786603419440 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 48 pueden multiplicarse mediante 3 multiplicaciones de tamaño 24
+Los numeros  211082454359880 y  201786603419440 los dividimos en > aL: 11919176 aR: 12581494 bL: 13711152 bR: 12027418
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 11919176 * 13711152 ; q = aR * bR > q = 12581494 * 12027418 ; r = (aL + aR) * (bL + bR) > r = (11919176 + 12581494) * (13711152 + 12027418)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 11919176
+Número B: 13711152
+Los numeros A: 11919176 y B: 13711152 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 12581494
+Número B: 12027418
+Los numeros A: 12581494 y B: 12027418 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 24500670
+Número B: 25738570
+Los numeros A: 24500670 y B: 25738570 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 163425633850752 , q = 151322887402492 , r = 630612209841900
+Calculamos el valor de s = (r - p - q) > s = 315863688588656
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 42593611506719149344348067200
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 440860411048702
+Número B: 439282888314148
+Los numeros A: 440860411048702 y B: 439282888314148 no son solución trivial (demasiado grandes para su multiplicación directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.
+DESCOMPOSICIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Lo que resulta en que dos números de tamaño máximo 49 pueden multiplicarse mediante 3 multiplicaciones de tamaño 25
+Los numeros  440860411048702 y  439282888314148 los dividimos en > aL: 3289854 aR: 13138664 bL: 8621348 bR: 13091650
+Y realizaremos las tres multiplicaciones p = aL *bL > p = 3289854 * 8621348 ; q = aR * bR > q = 13138664 * 13091650 ; r = (aL + aR) * (bL + bR) > r = (3289854 + 13138664) * (8621348 + 13091650)
+RESOLUCIÓN RECURSIVA DE LOS SUBPROBLEMAS
+Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 3289854
+Número B: 8621348
+Los numeros A: 3289854 y B: 8621348 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 13138664
+Número B: 13091650
+Los numeros A: 13138664 y B: 13091650 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+ALGORITMO DIVIDE Y VENCERÁS PARA MULTIPLICACIÓN DE NÚMEROS GRANDES
+Se va a proceder a realizar la multiplicación de los dos siguientes número enteros:
+Número A: 16428518
+Número B: 21712998
+Los numeros A: 16428518 y B: 21712998 son solución trivial (no demasiado grandes para su multiplicación directa) con lo que podemos multiplicarlos directamente.
+SOLUCIÓN TRIVIAL
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 28362976203192 , q = 172006790555600 , r = 356712378476964
+Calculamos el valor de s = (r - p - q) > s = 156342611718172
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 193662434708836339621503635896
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 54571411064292345410590553976 , q = 42593611506719149344348067200 , r = 193662434708836339621503635896
+Calculamos el valor de s = (r - p - q) > s = 96497412137824844866565014720
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 3374613574523811421582711400935011433809309151138801989496
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 814900933896648507402738761688990905241530275749419294128 , q = 848399209578659759939149350761666012637028723301435208060 , r = 3374613574523811421582711400935011433809309151138801989496
+Calculamos el valor de s = (r - p - q) > s = 1711313431048503154240823288484354515930750152087947487308
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 5325488150746893452486274034740016759715986246585984396976205987704892305808418470198164391726775145572491474771376
+COMBINACIÓN DE LAS SOLUCIONES DE LOS SUBPROBLEMAS
+Hemos obtenido recursivamente los valores p = 938474931019156479973610540784033404943959068351060905717965237531834140106804524221999911074775083692252151677602 , q = 1577194225051802258678017650098214736856970049654678797793121249105767084984670366220 , r = 5325488150746893452486274034740016759715986246585984396976205987704892305808418470198164391726775145572491474771376
+Calculamos el valor de s = (r - p - q) > s = 4387013219727736972512663493954406160546975375976245473608142535436201195651959267178371359402894294795254652727554
+Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: 62144616628408701352907532294392454200678186409076582569248091917428034055657239700154822244646944932206087383650472199908808429608671453280623294504596920333030087635854343636011349681635531221369506

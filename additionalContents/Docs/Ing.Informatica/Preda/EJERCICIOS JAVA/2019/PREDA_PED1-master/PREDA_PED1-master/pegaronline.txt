@@ -1,0 +1,90 @@
+import java.util.*;
+import java.lang.Math;
+import java.math.*;
+
+/**
+ * Write a description of class AlgoritmoVoraz here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class AlgoritmoDyV
+{
+    private boolean trazabilidad;
+
+    /**
+     * Constructor for objects of class AlgoritmoVoraz
+     */
+    public AlgoritmoDyV(boolean trazabilidad_p)
+    {
+        this.trazabilidad= trazabilidad_p;
+    }
+    
+    public static void main(String[] args) 
+    {
+        AlgoritmoDyV aDyV = new AlgoritmoDyV(true);
+        aDyV.ejecutarAlgoritmoDyV(new BigInteger("4728474577674616161839303495756453524262737373736272827367382726364784585746383647437"), new BigInteger("13142635242626253673748586970695656453524123131425364758696968574634535423535475869457362618191726363727252424253738"));
+    }
+    
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public BigInteger ejecutarAlgoritmoDyV(BigInteger numeroA_p, BigInteger numeroB_p)
+    {
+        System.out.println("ALGORITMO DIVIDE Y VENCERAS PARA MULTIPLICACION DE NUMEROS GRANDES");
+        if(trazabilidad){
+            System.out.println("Se va a proceder a realizar la multiplicacion de los dos siguientes numero enteros:");
+            System.out.println("Numero A: "+numeroA_p);
+            System.out.println("Numero B: "+numeroB_p);
+            System.out.println();
+        }
+        if(esSolucionTrivial(numeroA_p, numeroB_p)){
+            System.out.println("SOLUCION TRIVIAL");
+            return BigInteger.valueOf(Math.multiplyExact(numeroA_p.longValueExact(), numeroB_p.longValueExact()));
+        }
+        System.out.println("DESCOMPOSICION RECURSIVA DE LOS SUBPROBLEMAS");
+        int n = Math.max(numeroA_p.bitLength(), numeroB_p.bitLength());
+        int nn = n;
+        n =  (n/2) + (n%2);
+        System.out.println("Lo que resulta en que dos numeros de tamano maximo "+nn+" pueden multiplicarse mediante 3 multiplicaciones de tamano "+n);
+        BigInteger aR = numeroA_p.shiftRight(n);
+        BigInteger aL = numeroA_p.subtract(aR.shiftLeft(n));
+        BigInteger bR = numeroB_p.shiftRight(n);
+        BigInteger bL = numeroB_p.subtract(bR.shiftLeft(n));
+        System.out.println("Los numeros  "+numeroA_p+ " y  "+numeroB_p+" los dividimos en > aL: "+aL+" aR: "+aR+" bL: "+bL+" bR: "+bR);
+        System.out.println("Y realizaremos las tres multiplicaciones p = aL *bL > p = "+aL+" * "+bL+" ; q = aR * bR > q = "+aR+" * "+bR+" ; r = (aL + aR) * (bL + bR) > r = ("+aL+" + "+aR+") * ("+bL+" + "+bR+")");
+        System.out.println("RESOLUCION RECURSIVA DE LOS SUBPROBLEMAS");
+        System.out.println("Volvemos a invocar el algoritmo recursivamente para cada una de las tres multiplicaciones p, q y r.");
+        BigInteger p = ejecutarAlgoritmoDyV(aL, bL); //p = aL *bL
+        BigInteger q = ejecutarAlgoritmoDyV(aR, bR); //q = aR * bR 
+        BigInteger r = ejecutarAlgoritmoDyV(aL.add(aR), bL.add(bR)); //r = (aL + aR) * (bL + bR)
+
+        System.out.println("COMBINACION DE LAS SOLUCIONES DE LOS SUBPROBLEMAS");
+        System.out.println("Hemos obtenido recursivamente los valores p = "+p+" , q = "+q+" , r = "+r);
+        BigInteger s = r.subtract(q).subtract(p); // s = (r - p - q) 
+        System.out.println("Calculamos el valor de s = (r - p - q) > s = "+s);
+        System.out.println("Juntamos los resultados parciales de las multiplicaciones recursivas para obtener el resultado final, en este caso el resultado del subproblema es: "+q.shiftLeft(2 * n).add(s.shiftLeft(n)).add(p));
+        return q.shiftLeft(2 * n).add(s.shiftLeft(n)).add(p);
+    }
+    
+    private static boolean esSolucionTrivial(BigInteger numeroA_p, BigInteger numeroB_p){
+        if (BigInteger.valueOf(Long.MAX_VALUE).compareTo(numeroA_p) < 0 || BigInteger.valueOf(Long.MAX_VALUE).compareTo(numeroB_p) < 0) {
+              System.out.println("Los numeros A: "+numeroA_p+ " y B: "+numeroB_p+" no son solucion trivial (demasiado grandes para su representacion como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.");
+              return false;
+        }else{
+            try{
+                Math.multiplyExact(numeroA_p.longValueExact(), numeroB_p.longValueExact());
+                System.out.println("Los numeros A: "+numeroA_p+ " y B: "+numeroB_p+" son solucion trivial (no demasiado grandes para su multiplicacion directa) con lo que podemos multiplicarlos directamente.");
+                return true;
+            }catch(Exception e){
+                System.out.println("Los numeros A: "+numeroA_p+ " y B: "+numeroB_p+" no son solucion trivial (demasiado grandes para su multiplicacion directa como long en java) con lo que debemos dividirlos en dos mitades, para poder multiplicarlos.");
+                return false;
+            }    
+        }
+    }
+    
+}

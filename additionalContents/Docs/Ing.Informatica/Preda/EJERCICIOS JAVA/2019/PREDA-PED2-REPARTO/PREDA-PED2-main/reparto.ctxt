@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=reparto
+comment1.params=
+comment1.target=reparto()
+comment2.params=x\ suma1\ suma2\ sumaTotal\ k\ v
+comment2.target=void\ dividirSociedad(java.lang.Integer[],\ int,\ int,\ int,\ int,\ java.lang.Integer[])
+comment3.params=x\ sumaParcial\ sumaTotal\ k
+comment3.target=boolean\ completable(java.lang.Integer[],\ int,\ int,\ int)
+comment4.params=x
+comment4.target=void\ resolverSeparacionSocios(java.lang.Integer[])
+comment5.params=v\ x
+comment5.target=void\ procesar(java.lang.Integer[],\ java.lang.Integer[])
+numComments=6

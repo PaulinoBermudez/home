@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=nombrearchivoentrada
+comment0.target=EntradaConfig(java.lang.String)
+comment0.text=\n\ Este\ es\ el\ contructor\ de\ la\ clase\ encargada\ de\ leer\ la\ configuraci\u00F3n\ de\ los\ archios\ de\ entrada\n
+comment1.params=
+comment1.target=void\ leerConfig()
+comment1.text=\n\n\n
+comment2.params=
+comment2.target=boolean\ comprobarDatos()
+comment3.params=
+comment3.target=java.lang.String\ getOperandoA()
+comment4.params=
+comment4.target=java.lang.String\ getOperandoB()
+numComments=5
